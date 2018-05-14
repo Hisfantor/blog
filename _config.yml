@@ -1,0 +1,11 @@
+# basic options
+        title: Hisfantor's Blog
+        author: Hisfantor
+        email: niclas@hisfantor.com
+        description: do stuff, make stuff, stop procrastinate
+        twitter_username: hisfantor
+        github_username:  hisfantor
+
+# build settings
+        markdown: kramdown
+        theme: minima
