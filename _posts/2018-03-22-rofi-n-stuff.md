@@ -8,7 +8,6 @@ title: bash aliases in rofi
 * rofi
 * bash shell
 
-# 
 
 # Setup:
 
@@ -39,7 +38,6 @@ I use i3wm so I add in my config\(.config/i3/config\):
 
     bindsym $mod+d exec rofi -run-list-command ". ~/.bash_aliases" -run-command "/bin/bash -i -c '{cmd}'" -show run
 
-# 
 
 # Explanation:
 
