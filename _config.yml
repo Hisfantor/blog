@@ -9,7 +9,3 @@
 # build settings
         markdown: kramdown
         theme: minima
-
-#added by me
-	future: false
-
