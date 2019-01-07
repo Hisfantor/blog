@@ -136,3 +136,10 @@ html, body {
   margin: auto;
   padding: 0 30px;
 }
+/*----------------------------------------------------------------------*/
+.my-site-header nav ul li {
+  display: inline-block;
+}
+.my-site-header nav ul {
+  list-style-type: none;
+}

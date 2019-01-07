@@ -55,9 +55,8 @@ $(document).ready(function() {
      
             
             // Animate the scroll to top
-            $('.go-top').click(function(event) {
-                event.preventDefault();
+           function totop(){
                 
                 $('html, body').animate({scrollTop: 0}, 300);
-            })
-        });
+            }
+       
