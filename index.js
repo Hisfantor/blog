@@ -44,19 +44,61 @@ function hasScrolled() {
 //------------------------
 
 function changeClass(){
-    document.getElementById("contentbox").classList.toggle('content');    
+    $("#contentbox").toggleClass('content');    
 }
 
-   /* window.onload = function(){
-        document.getElementById("button").addEventListener( 'click', changeClass());
-    }*/
+        
+// Animate the scroll to top
+function totop(){         
+    $('html, body').animate({scrollTop: 0}, 300);
+}
 
-$(document).ready(function() {
-     
-            
-            // Animate the scroll to top
-           function totop(){
-                
-                $('html, body').animate({scrollTop: 0}, 300);
-            }
-       
+var x = 0;
+
+function toggledark(){
+    if (x == 0) {
+        $('#contentbox').css({
+            'background-color' : 'rgba(30, 41, 62, 1)',
+            'color' : 'white'
+        });
+        $('pre, code, .highlighter-rouge, .highlight code, div.highlighter-rouge .highlight').css({
+            'background-color' : 'rgba(58, 71, 84, 1)'
+        });
+        $('html body').css({
+            'background-color' : 'rgba(58, 71, 84, 1)'
+        });
+        $("#contentbox table tr, #contentbox table th").css({
+            'background-color' : 'rgba(58, 71, 84, 1)',
+            'color' : 'white'
+        });
+        x+=1;
+        return x;
+    }
+    else {
+        $('#contentbox').css({
+            'background-color' : '#fdfdfd',
+            'color' : '#111'
+        });
+        $('pre, code, .highlighter-rouge, .highlight code, div.highlighter-rouge .highlight').css({
+            'background-color' : 'rgb(188, 196, 204)'
+        });
+        $('html body').css({
+            'background-color' : 'rgb(188, 196, 204)'
+        });
+        $("#contentbox table tr, #contentbox table th").css({
+            'background-color' : 'white',
+            'color' : '#111'
+        });
+        $('table tr:nth-child(even)').css({
+            'background-color' : '#f7f7f7'
+        });
+        x-=1;
+        return x;
+    }
+}
+
+/*archive*/
+ $('#grippy').click(function(){
+    $('#archive').toggleClass('archiveout');
+    $('#contentbox').toggleClass('contentmargin');
+});

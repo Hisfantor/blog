@@ -9,14 +9,6 @@ body { margin:0px; padding:0px; }
     width: 100%;
     height:300px;
 }
-.my-site-header h1 {
-    background-color: rgba(0,0,0, 0.1);
-    color: #fff;
-    text-align:center;
-    width:200px;
-  margin:auto;
-  border: solid #333;
-}
 
 .fixed-header {
     position: fixed;
@@ -31,7 +23,6 @@ nav {
     width: 100%;
     height: 60px;
     background: #292f36;
-    postion: fixed;
     z-index: 10;
   transition: top 0.2s ease-in;
 }
@@ -46,9 +37,6 @@ nav {
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
 
 .box {
   display: flex;
@@ -66,11 +54,11 @@ html, body {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+  width: 33%;
 }
 
 .box .item:hover {
-  flex-grow: 4;
-  box-shadow: inset 0 0 20px #000;
+  width: 60%;
 }
 
 .box .item a {
@@ -96,26 +84,14 @@ html, body {
   background-position: 45% center;
 }
 
-.box .item.irelia a {
-  content: "Podcasts";
-}
-
 .box .item.jinx  {
   background-image: url("https://i.imgur.com/FnZXq2X.jpg");
   background-position: 70% center;
 }
 
-.box .item.jinx a{
-  content: "Mech Keyboards";
-}
-
-.box .item.katarina  {
-  background-image: url("https://i.imgur.com/jXRAQjf.jpg");
-  background-position: 70% center;
-}
-
-.box .item.katarina a {
-  content: "Tech";
+.box .item.katarina #burpbox {
+  max-width: 400px;
+  margin: 0 auto 0 auto;
 }
 
 .site-header {
@@ -130,8 +106,8 @@ html, body {
   margin:0;
   padding: 10px;
 }
-.content {
-  
+body #contentbox.content {
+  margin-left: 0;
   max-width: 800px;
   margin: auto;
   padding: 0 30px;
@@ -142,4 +118,55 @@ html, body {
 }
 .my-site-header nav ul {
   list-style-type: none;
+}
+a svg.svg-icon {
+width: 23px;
+}
+#contentbox{
+  background-color: #fdfdfd;
+  color: #111;
+}
+pre, code, .highlighter-rouge, .highlight code, div.highlighter-rouge .highlight{
+  background-color: rgb(188, 196, 204);
+}
+html body{
+  background-color: rgb(188, 196, 204);
+}
+#contentbox table tr, #contentbox table th{
+  background-color: white;
+  color: #111;
+}
+table tr:nth-child(even){
+  background-color: #f7f7f7;
+}
+
+/*archive----------------------------------------------------*/
+#archive #grippy{
+width:15px;
+position: absolute;
+right: 0;
+height: 100%;
+cursor: pointer;
+background-color: green;
+}
+#archive {
+  position: absolute;
+  bottom: 0;
+  top:360px;
+  width: 0;
+  padding-right: 15px;
+  overflow: hidden;
+}
+#archive.archiveout {
+  width: 200px;
+}
+#contentbox {
+  margin-left: 15px;
+}
+#contentbox.contentmargin {
+  margin-left: 200px;
+}
+
+body {
+  position: relative;
 }

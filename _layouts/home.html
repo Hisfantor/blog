@@ -11,20 +11,52 @@
   
   <div class="item irelia"><a href="https://hisfantor.com/got-podcasts/">Podcatsts</a></div>
   <div class="item jinx"><a href="">MK</a></div>
-  <div class="item katarina"><a href="">Tech</a></div>
- 
+  <div class="item katarina"><a href="">Burps</a>
+    <div id="burpbox">
+    <ul>
+    {% for post in site.categories.burp %}
+  <li><span>@Hisfantor {{ post.date | date_to_string }}</span>
+    <p>{{post.content}}</p>
+  </li>
+  {% endfor %}
+  </ul>
+  </div>
+ </div>
 </div>
     </div>
     <nav>
      <ul>
-     	<li><button onclick="changeClass()">My Button</button></li>
-     	<li><a href="#" class="go-top">Go Top</a></li>
-     </ul>
+      <li><button onclick="totop()">top</button></li>
+     	<li><button onclick="changeClass()">center</button></li>
+      <li><button onclick="toggledark()">darkmode</button></li>
+      </ul>
     </nav>
 </header>
-   
+<sidebar id="archive">
+  <div id="grippy"></div>
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+    
+    <h3 class="category-head">{{ category_name }}</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories[category_name] %}
+    <div class="archive-item">
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+    </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+</sidebar>
+
+
 <section id="contentbox">   
-    {{site.posts}}
+  {% for post in site.categories.blog %}
+  <h2>{{ post.title }}</h2><span>{{ post.date | date_to_string }}</span>
+  {{post.content}}
+  {% endfor %}
 </section> 
 <footer>
 	
