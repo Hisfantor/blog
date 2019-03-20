@@ -40,13 +40,6 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
-
-//------------------------
-
-function changeClass(){
-    $("#contentbox").toggleClass('content');    
-}
-
         
 // Animate the scroll to top
 function totop(){         
@@ -102,3 +95,7 @@ function toggledark(){
     $('#archive').toggleClass('archiveout');
     $('#contentbox').toggleClass('contentmargin');
 });
+
+ function toggleList(){
+    $("#contentbox").toggleClass('list');    
+}
