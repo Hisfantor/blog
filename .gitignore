@@ -1,7 +1,6 @@
 _site
-<<<<<<< HEAD
 todo
 style.scss
-=======
-pictures
->>>>>>> master
+_layouts/home_test.html
+assets/pictures
+.sass-cache
