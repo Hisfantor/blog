@@ -45,7 +45,7 @@ function hasScrolled() {
 function totop(){         
     $('html, body').animate({scrollTop: 0}, 300);
 }
-
+/* darkmode --------------------------------------------------------
 var x = 0;
 
 function toggledark(){
@@ -89,13 +89,9 @@ function toggledark(){
         return x;
     }
 }
-
+*/
 /*archive*/
- $('#grippy').click(function(){
+ function togglearchive(){
     $('#archive').toggleClass('archiveout');
     $('#contentbox').toggleClass('contentmargin');
-});
-
- function toggleList(){
-    $("#contentbox").toggleClass('list');    
 }

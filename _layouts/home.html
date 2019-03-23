@@ -8,33 +8,26 @@
 <body>
 <header class="my-site-header">
     <div class="header-banner"> 
-      <h1>Hisfantor -.+</h1>
+      <h1>Hisfantor</h1>
     </div>
     <nav>
-     <ul>
-      <li><button onclick="totop()">top</button></li>
-      <!--<li><button onclick="toggledark()">darkmode</button></li>-->
-      </ul>
-      <a id="about" href="/about.html">About</a>
+      <a onclick="togglearchive()">Archive</a>
+     
+      <a href="/about.html">About</a>
+      <a onclick="totop()">top</a>
     </nav>
 </header>
 <sidebar id="archive">
-  <div id="grippy">
-    <p>A <br>R <br>C <br>H <br>I <br>V <br>E</p>
-  </div>
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
     
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
+    <h3 class="category-head">{{ category_name }}:</h3>
+    <ul>
     {% for post in site.categories[category_name] %}
-    <div class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </div>
-    {% endfor %}
+      <li class="archive-item" ><a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{post.title}}</a></li>
+    
+    {% endfor %}</ul>
   </div>
 {% endfor %}
 </sidebar>
@@ -43,13 +36,16 @@
 <section id="contentbox">   
   {% for post in site.posts %}
   <article>
-    <h2><a href="{{ post.url }}" rel="">{{ post.title }}</a></h2>
+    <h2><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></h2>
+    {% if post.previewImg %}
     <a href="{{post.previewImg}}" data-link="{{post.url}}" onclick="location.href=this.dataset.link; return !1">
-      <img src="{{post.thumb}}"></a>
-    <p>
+      <img src="{{post.thumb}}"></a>{% endif %}
+      
+    {% if post.previewImg %}<div>{% endif %}<p>
       {{ post.caption }}
     </p>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+  {% if post.previewImg %}</div>{% endif %}
   </article>
 {% endfor %}
 </section> 
