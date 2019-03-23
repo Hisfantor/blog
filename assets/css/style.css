@@ -73,34 +73,6 @@ nav {
     nav a:nth-child(2) {
       left: 73px; }
 
-/*----------------------------------------------------------------------
-
-.my-site-header nav ul {
-  li {
-    display: inline-block;
-  }
-  list-style-type: none;
-}
-
-a svg.svg-icon {
-  width: 23px;
-}
-
-pre, code, .highlighter-rouge, .highlight code, div.highlighter-rouge .highlight, html body {
-  background-color: $card-color;
-}
-
-#contentbox table {
-  tr, th {
-    background-color: $card-color;
-    color: $font-color;
-  }
-}
-
-table tr:nth-child(even) {
-  background-color: $card-color;
-}
-*/
 /*archive----------------------------------------------------*/
 #archive {
   background-color: #6272a4;
@@ -125,16 +97,18 @@ table tr:nth-child(even) {
   #archive .archive-group {
     margin: 0 0 10px 0; }
   #archive .category-head {
+    color: #ffb86c;
     text-decoration: underline; }
   #archive .archive-item {
     padding: 0 0 0 5px;
     font-weight: bold; }
+  #archive a:visited {
+    color: #44475a; }
 
-/*-------------------------------------------------------------*/
+/*maincontent-------------------------------------------------------------*/
 #contentbox {
   background-color: #282a36;
   color: #f8f8f2;
-  margin-left: 15px;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -160,8 +134,11 @@ article {
     width: 80px;
     max-height: 80px;
     float: left; }
+  article h2 {
+    height: 28px;
+    overflow: hidden; }
   article a:visited {
-    color: rgba(241, 250, 140, 0); }
+    color: #6272a4; }
   article div {
     width: 320px;
     margin: 0 0 0 80px; }
@@ -193,6 +170,9 @@ article {
     margin-left: calc((100% - 400px) / 2);
     margin-right: 0; }
     article:nth-child(2n) {
-      margin-left: calc((100% - 400px) / 2); } }
+      margin-left: calc((100% - 400px) / 2); }
+
+  .header-banner h1 {
+    font-size: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
