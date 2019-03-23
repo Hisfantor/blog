@@ -2,8 +2,6 @@
 layout: post
 title: bash alias in rofi
 caption: define bash aliases and run them from rofi
-previewImg: /assets/pictures/bash alias in rofi/bash alias in rofi.png
-thumb:      /assets/pictures/bash alias in rofi/bash alias in rofi_thumb.png
 published: true
 categories: [linux]
 tags: [ubuntu, rofi, bash]

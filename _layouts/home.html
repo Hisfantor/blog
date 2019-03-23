@@ -3,7 +3,8 @@
 <head>
   <title>Hisfantor</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  
+  <link rel="shortcut icon" href="assets/pictures/snoo.ico">
 </head>
 <body>
 <header class="my-site-header">
@@ -38,8 +39,8 @@
   <article>
     <h2><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></h2>
     {% if post.previewImg %}
-    <a href="{{post.previewImg}}" data-link="{{post.url}}" onclick="location.href=this.dataset.link; return !1">
-      <img src="{{post.thumb}}"></a>{% endif %}
+    <a href="{{ site.url }}/assets/pictures/{{ post.title }}/{{post.previewImg}}.png" data-link="{{post.url}}" onclick="location.href=this.dataset.link; return !1">
+      <img src="{{ site.url }}/assets/pictures/{{ post.title }}/{{post.previewImg}}_thumb.png"></a>{% endif %}
       
     {% if post.previewImg %}<div>{% endif %}<p>
       {{ post.caption }}
