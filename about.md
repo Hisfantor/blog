@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: about Hisfantor
 ---
 
 ### niclas@hisfantor.com
