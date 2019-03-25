@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: Helvetica; }
+
+/*colors*/
+html {
+  height: 100%; }
+  html body {
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    background-color: #282a36 !important; }
+
+a {
+  color: #f1fa8c;
+  text-decoration: none; }
+
+/*header---------------------------------------------------------------*/
+.my-site-header {
+  height: 360px;
+  z-index: 10; }
+
+.header-banner {
+  background-color: #6272a4;
+  width: 100%;
+  height: 300px; }
+  .header-banner h1 {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 142px;
+    line-height: 300px;
+    color: #ffb86c; }
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.nav-up {
+  top: -60px; }
+
+nav {
+  width: 100%;
+  height: 40px;
+  background: #44475a;
+  z-index: 10;
+  transition: top 0.2s ease-in; }
+  nav a {
+    font-weight: bold;
+    background-color: #6272a4;
+    display: inline-block;
+    width: 65px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+    margin: 5px 0 5px 0px;
+    padding: 0 3px 0 3px;
+    position: absolute; }
+    nav a:hover {
+      opacity: 0.8; }
+    nav a:nth-child(3) {
+      right: 4px; }
+    nav a:nth-child(1) {
+      left: 4px; }
+    nav a:nth-child(2) {
+      left: 73px; }
+
+/*archive----------------------------------------------------*/
+#archive {
+  background-color: #6272a4;
+  position: absolute;
+  bottom: 0;
+  top: 340px;
+  left: -200px;
+  width: 200px;
+  height: fit-content;
+  overflow: hidden;
+  min-height: calc(100% - 340px);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  #archive.archiveout {
+    left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  #archive .archive-group {
+    margin: 0 0 10px 0; }
+  #archive .category-head {
+    color: #ffb86c;
+    text-decoration: underline; }
+  #archive .archive-item {
+    padding: 0 0 0 5px;
+    font-weight: bold; }
+  #archive a:visited {
+    color: #44475a; }
+
+/*maincontent-------------------------------------------------------------*/
+#contentbox {
+  background-color: #282a36;
+  color: #f8f8f2;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  #contentbox.contentmargin {
+    margin-left: 200px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+article {
+  background-color: #44475a;
+  height: 110px;
+  width: 400px;
+  overflow: hidden;
+  margin: 8px 0 0 0;
+  padding: 1px; }
+  article img {
+    width: 80px;
+    max-height: 80px;
+    float: left; }
+  article h2 {
+    height: 28px;
+    overflow: hidden; }
+  article a:visited {
+    color: #6272a4; }
+  article div {
+    width: 320px;
+    margin: 0 0 0 80px; }
+  article p, article div p {
+    height: 65px;
+    overflow: hidden;
+    padding: 0 0 0 2px; }
+  article time, article div time {
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 0 0 2px; }
+
+@media only screen and (min-width: 1451px) {
+  article:nth-child(1), article:nth-child(3n+4) {
+    margin-left: calc((100% - 1216px) / 2);
+    margin-right: 8px; }
+  article:nth-child(3n) {
+    margin-right: calc((100% - 1216px) / 2);
+    margin-left: 8px; } }
+@media only screen and (max-width: 1450px) {
+  article {
+    margin-left: calc((100% - 808px) / 2);
+    margin-right: 8px; }
+    article:nth-child(2n) {
+      margin-right: calc((100% - 808px) / 2);
+      margin-left: 0; } }
+@media only screen and (max-width: 1050px) {
+  article {
+    margin-left: calc((100% - 400px) / 2);
+    margin-right: 0; }
+    article:nth-child(2n) {
+      margin-left: calc((100% - 400px) / 2); }
+
+  .header-banner h1 {
+    font-size: 100px; } }
+
+/*# sourceMappingURL=style.css.map */

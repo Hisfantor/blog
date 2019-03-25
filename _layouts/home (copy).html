@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hisfantor</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="{{ site.url }}/assets/pictures/snoo.ico">
+</head>
+<body>
+<header class="my-site-header">
+    <div class="header-banner"> 
+      <h1>Hisfantor</h1>
+    </div>
+    <nav>
+      <a onclick="togglearchive()">Archive</a>
+     
+      <a target="_blank" href="{{ site.baseurl }}/about.html">About</a>
+      <a onclick="totop()">top</a>
+    </nav>
+</header>
+<sidebar id="archive">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    
+    <h3 class="category-head">{{ category_name }}:</h3>
+    <ul>
+    {% for post in site.categories[category_name] %}
+      <li class="archive-item" ><a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{post.title}}</a></li>
+    
+    {% endfor %}</ul>
+  </div>
+{% endfor %}
+</sidebar>
+
+
+<section id="contentbox">   
+  {% for post in site.posts %}
+  <article>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{ post.title }}</a></h2>
+    <p>
+      {{ post.caption }}
+    </p>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+  {% if post.previewImg %}</div>{% endif %}
+  </article>
+{% endfor %}
+</section> 
+<footer>
+	
+</footer><script  src="assets/js/index.js"></script>
+</body>
+</html>
