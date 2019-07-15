@@ -2,10 +2,10 @@
 <html>
 <head>
   <title>Hisfantor</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<link rel="shortcut icon" href="{{ site.url }}/assets/pictures/snoo.ico">
+<link rel="shortcut icon" href="/assets/pictures/snoo.ico">
 </head>
 <body>
 <header class="my-site-header">
@@ -35,20 +35,13 @@
 </sidebar>
 
 
-<section id="contentbox">   
-  {% for post in site.posts %}
-  <article>
-    <h2><a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{ post.title }}</a></h2>
-    <p>
-      {{ post.caption }}
-    </p>
-    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-  {% if post.previewImg %}</div>{% endif %}
-  </article>
-{% endfor %}
+<section id="page">
+<h1>{{ page.title }}</h1>  
+<span>{{ page.date | date_to_long_string }}</span>
+  {{page.content}}
 </section> 
 <footer>
 	
-</footer><script  src="assets/js/index.js"></script>
+</footer><script  src="/assets/js/index.js"></script>
 </body>
 </html>

@@ -174,5 +174,15 @@ article {
 
   .header-banner h1 {
     font-size: 100px; } }
+/*article page---------------------------------------*/
+#page {
+  width: 800px;
+  margin: auto;
+  background-color: #44475a;
+  padding: 2px; }
+  #page ul, #page ol {
+    list-style-position: inside; }
+  #page h1, #page h2, #page h3, #page h4 {
+    color: #ffb86c; }
 
 /*# sourceMappingURL=style.css.map */
