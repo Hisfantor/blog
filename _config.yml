@@ -8,7 +8,7 @@
 
 # build settings
         markdown: kramdown
-        #theme: minima
+        theme: minima
         host: 0.0.0.0
         port: 4000
-theme: jekyll-theme-hacker
+
