@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hisfantor</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="/assets/pictures/snoo.ico">
+</head>
+<body>
+<header class="my-site-header">
+    <div class="header-banner"> 
+      <h1>Hisfantor</h1>
+    </div>
+    <nav>
+      <a onclick="togglearchive()">Archive</a>
+     
+      <a target="_blank" href="/about.html">About</a>
+      <a onclick="totop()">top</a>
+    </nav>
+</header>
+<sidebar id="archive">
+
+  <div class="archive-group">
+    
+    
+    <h3 class="category-head">linux:</h3>
+    <ul>
+    
+      <li class="archive-item" ><a href="/linux/2018/12/30/day30.html" target="_blank">December 30 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/2018/12/27/day27.html" target="_blank">December 27 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/2018/12/26/updates.html" target="_blank">December 26 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/05/day5.html" target="_blank">December 05 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/04/day4.html" target="_blank">December 04 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/03/day3.html" target="_blank">December 03 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/02/day2.html" target="_blank">December 02 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/01/day1.html" target="_blank">December 01 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/2018/03/22/rofi-n-stuff.html" target="_blank">bash alias in rofi</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/2018/03/17/wpr.html" target="_blank">random desktop wallpaper</a></li>
+    
+    </ul>
+  </div>
+
+  <div class="archive-group">
+    
+    
+    <h3 class="category-head">podcasts:</h3>
+    <ul>
+    
+      <li class="archive-item" ><a href="/podcasts/2018/04/15/podcasts.html" target="_blank">some Podcasts</a></li>
+    
+    </ul>
+  </div>
+
+  <div class="archive-group">
+    
+    
+    <h3 class="category-head">raspberry:</h3>
+    <ul>
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/05/day5.html" target="_blank">December 05 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/04/day4.html" target="_blank">December 04 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/03/day3.html" target="_blank">December 03 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/02/day2.html" target="_blank">December 02 2018</a></li>
+    
+    
+      <li class="archive-item" ><a href="/linux/raspberry/2018/12/01/day1.html" target="_blank">December 01 2018</a></li>
+    
+    </ul>
+  </div>
+
+</sidebar>
+
+
+<section id="page">
+<h1>some Podcasts</h1>  
+<span>15 April 2018</span>
+  <style>
+	table {
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+</style>
+
+<h2 id="podcasts">Podcasts:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>category</th>
+      <th>name</th>
+      <th>rss</th>
+      <th>website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>making</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>The Board</td>
+      <td><a href="https://theboard.libsyn.com/rss">rss</a></td>
+      <td><a href="http://theboard.libsyn.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Board Makers</td>
+      <td><a href="https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A158783346/sounds.rss">rss</a></td>
+      <td><a href="https://soundcloud.com/board-makers">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Knife Talk</td>
+      <td><a href="https://rss.simplecast.com/podcasts/2810/rss">rss</a></td>
+      <td><a href="http://knifetalk.net/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Making It</td>
+      <td><a href="https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A144818784/sounds.rss">rss</a></td>
+      <td><a href="http://makingitpodcast.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Welding Tips and Tricks</td>
+      <td><a href="https://wttpodcast.libsyn.com/rss">rss</a></td>
+      <td><a href="https://wttpodcast.libsyn.com/">link</a></td>
+    </tr>
+    <tr>
+      <td><strong>movie/show</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Back to the Future Minute</td>
+      <td><a href="http://www.backtothefutureminute.com/feed/">rss</a></td>
+      <td><a href="http://www.backtothefutureminute.com/category/podcasts/back-to-the-future-minute/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Decoding Westworld</td>
+      <td><a href="https://feeds.soundcloud.com/users/soundcloud:users:259871793/sounds.rss">rss</a></td>
+      <td><a href="https://soundcloud.com/decodingwestworld">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Interdimensional rss</td>
+      <td><a href="https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A37793930/sounds.rs://www.apatheticenthusiasm.com/feed/rickandmortypodcast/">rss</a></td>
+      <td><a href="https://www.apatheticenthusiasm.com/rickandmortypodcast-2/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>The Maze</td>
+      <td><a href="https://feeds.soundcloud.com/users/soundcloud:users:432784794/sounds.rss">rss</a></td>
+      <td><a href="https://soundcloud.com/wisecrackwestworld">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Show Me The Meaning</td>
+      <td><a href="https://showmethemeaning.libsyn.com/rssi">rss</a></td>
+      <td><a href="https://www.stitcher.com/podcast/wisecrack-inc/show-me-the-meaning-a-wisecrack-movie-podcast">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>The Squanch</td>
+      <td><a href="http://squanch.libsyn.com/rss">rss</a></td>
+      <td><a href="https://soundcloud.com/thesquanch">link</a></td>
+    </tr>
+    <tr>
+      <td><strong>videogames</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Electronic Wireless Show</td>
+      <td><a href="https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A116257077/sounds.rss">rss</a></td>
+      <td><a href="https://soundcloud.com/rockpapershotgun">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Giant Bombcast</td>
+      <td><a href="https://www.giantbomb.com/podcast-xml/giant-bombcastanti">rss</a></td>
+      <td><a href="https://www.giantbomb.com/podcasts/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Hello Internet</td>
+      <td><a href="http://www.hellointernet.fm/podcast?format=rss">rss</a></td>
+      <td><a href="http://www.hellointernet.fm/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Idle Thumbs</td>
+      <td><a href="https://www.idlethumbs.net/feeds/idle-thumbs">rss</a></td>
+      <td><a href="https://www.idlethumbs.net/idlethumbs">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>The Indoor Kids</td>
+      <td><a href="https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A37793930/sounds.rss">rss</a></td>
+      <td><a href="https://soundcloud.com/indoorkids">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Roguelike Radio</td>
+      <td><a href="http://feeds.feedburner.com/RoguelikeRadio">rss</a></td>
+      <td><a href="http://www.roguelikeradio.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Super Joysick Radio</td>
+      <td><a href="https://superjoystickradio.libsyn.com/rss">rss</a></td>
+      <td><a href="http://superjoystickradio.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Videogames Hot Dog</td>
+      <td><a href="http://shows.kingdomofloathing.com/ahd/videogameshotdog.xml">rss</a></td>
+      <td><a href="http://videogameshotdog.com/allepisodes.php">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Watch Out For Fireballs</td>
+      <td><a href="http://www.watchoutforfireballs.com/rss">rss</a></td>
+      <td><a href="http://www.watchoutforfireballs.com/">link</a></td>
+    </tr>
+    <tr>
+      <td><strong>music</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Legacy Music Hour</td>
+      <td><a href="http://feeds.feedburner.com/LegacyMusicHour">rss</a></td>
+      <td><a href="https://soundcloud.com/legacy-music-hour">link</a></td>
+    </tr>
+    <tr>
+      <td><strong>linux</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Linux Outlaws</td>
+      <td><a href="http://feeds.feedburner.com/linuxoutlaws">rss</a></td>
+      <td><a href="http://sixgun.org/linuxoutlaws/">link</a></td>
+    </tr>
+    <tr>
+      <td><strong>others</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Advice Hot Dog</td>
+      <td><a href="http://shows.kingdomofloathing.com/ahd/advicehotdog.xmli">rss</a></td>
+      <td><a href="http://advicehotdog.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Containers</td>
+      <td><a href="http://feeds.feedburner.com/ContainersPodcast">rss</a></td>
+      <td><a href="https://soundcloud.com/containersfmg">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Rabbits</td>
+      <td><a href="https://rabbits.libsyn.com/rss">rss</a></td>
+      <td><a href="https://www.rabbitspodcast.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Stuff You Should Know</td>
+      <td><a href="https://feeds.megaphone.fm/stuffyoushouldknow">rss</a></td>
+      <td><a href="https://player.fm/series/stuff-you-should-know-1659652">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Under The Hood</td>
+      <td><a href="https://underthehoodpod.libsyn.com/rss">rss</a></td>
+      <td><a href="http://underthehoodpod.libsyn.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Walking Up with Sam Harris</td>
+      <td><a href="https://wakingup.libsyn.com/rss">rss</a></td>
+      <td><a href="https://www.samharris.org/podcast">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>WTF with Marc Maron</td>
+      <td><a href="https://wtfpod.libsyn.com/rss">rss</a></td>
+      <td><a href="http://www.wtfpod.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>You Must Remember This</td>
+      <td><a href="https://feeds.feedburner.com/MustRememberThis">rss</a></td>
+      <td><a href="http://podbay.fm/show/858124601">link</a></td>
+    </tr>
+    <tr>
+      <td><strong>finished</strong></td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>The Biggest Problem in the Universe</td>
+      <td><a href="https://feeds.soundcloud.com/playlists/soundcloud:playlists:232148533/sounds.rss">rss</a></td>
+      <td><a href="http://thebiggestproblemintheuniverse.com/">link</a></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Game of Thrones von Serienjunkies.de</td>
+      <td><a href="https://sjme.de/sjpodcast/serienjunkies_podcast_itunesfeed_game-of-thrones.xml">rss</a></td>
+      <td><a href="https://itunes.apple.com/de/podcast/game-of-thrones-podcast/id993110464?l=en&amp;mt=2">link</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="android-apps">Android apps:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>app</th>
+      <th>gpodder</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.axelby.podax&amp;hl=en">podax</a></td>
+      <td>Subscription sync</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=de.danoeh.antennapod&amp;hl=en">AntennaPod</a></td>
+      <td>login but no sync so far</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=org.codepimps.listenup.free">listen up free</a></td>
+      <td>login but no sync so far</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=org.bottiger.podcast">SoundWaves</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.sancel.cast.best.podcast.tune.list">Podcast Tunes</a></td>
+      <td>sync in progress</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.vaikeo.podcastpro">PodcastBox - Podcast Player</a></td>
+      <td>only gpodder search, no sync</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.silvereon.podcast">Omni Podcast</a></td>
+      <td>only search and top podcasts, no sync</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.castmic.podcast">CastMic Podcast Player: Free radio podcatcher</a></td>
+      <td>sync startet</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=net.alliknow.podcatcher">Simple Podcatcher</a></td>
+      <td>start sync</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.peaches.jpodcasts&amp;rdid=com.peaches.jpodcasts">Jpodcasts</a></td>
+      <td>sync startet</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.dragontek.podder">Podder</a></td>
+      <td>sync startet</td>
+    </tr>
+    <tr>
+      <td><a href="https://play.google.com/store/apps/details?id=com.podcatcher.deluxe&amp;hl=en">Podcatcher Deluxe</a></td>
+      <td>2€</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="linux-clients">Linux clients:</h2>
+<ul>
+  <li><a href="https://gpodder.net">gpodder</a></li>
+</ul>
+
+<hr />
+
+<h2 id="others">Others:</h2>
+<ul>
+  <li><a href="https://wiki.gnome.org/Apps/Rhythmbox">rhythmbox</a></li>
+</ul>
+
+
+</section> 
+<footer>
+	
+</footer><script  src="/assets/js/index.js"></script>
+</body>
+</html>

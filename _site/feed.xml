@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2019-12-26T17:25:06+01:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Hisfantor’s Blog</title><subtitle>do stuff, make stuff, stop procrastinate</subtitle><author><name>Hisfantor</name></author><entry><title type="html">How gio_motion designed and built his own keyboard</title><link href="http://0.0.0.0:4000/2019/07/15/How-I-designed-and-built-my-own-keyboard-Costs-and-Resources-by-gio_motion.html" rel="alternate" type="text/html" title="How gio_motion designed and built his own keyboard" /><published>2019-07-15T00:00:00+02:00</published><updated>2019-07-15T00:00:00+02:00</updated><id>http://0.0.0.0:4000/2019/07/15/How%20I%20designed%20and%20built%20my%20own%20keyboard%20%5BCosts%20and%20Resources%5D%20by%20gio_motion</id><content type="html" xml:base="http://0.0.0.0:4000/2019/07/15/How-I-designed-and-built-my-own-keyboard-Costs-and-Resources-by-gio_motion.html">&lt;hr /&gt;
+
+&lt;h4 id=&quot;original-post&quot;&gt;original post:&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://imgur.com/a/jq0plEy&quot;&gt;https://imgur.com/a/jq0plEy&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/MechanicalKeyboards/comments/cdgdgz/how_i_designed_and_built_my_own_keyboard_costs/&quot;&gt;https://www.reddit.com/r/MechanicalKeyboards/comments/cdgdgz/how_i_designed_and_built_my_own_keyboard_costs/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;how-i-designed-and-built-my-own-keyboard-costs-and-resources&quot;&gt;How I designed and built my own keyboard [Costs and Resources]&lt;/h2&gt;
+&lt;p&gt;by &lt;a href=&quot;https://old.reddit.com/user/gio_motion&quot;&gt;u/gio_motion&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/QwomFCW.jpg&quot; alt=&quot;rendering&quot; /&gt;
+I recently built the keyboard I designed and I wanted to talk about the design process, which tools I used, which resources I found online and the problems I encountered.&lt;/p&gt;
+
+&lt;p&gt;I have a lot of useful links to share, but Imgur is putting spaces in the middle of all of them! I’m sorry about it, you’ll have to delete the extra spaces.&lt;/p&gt;
+
+&lt;p&gt;Design-wise, I’m a huge fan of Braun, but they never made keyboards, so I wanted to make mine as if it was part of a Braun product line-up from the 70s. Also one of my favorite keyboards of all time is the Data General Dasher, so I think my design tries to answer the question “what if the Dasher was made by Braun but with a modern layout?”
+Pinterest is great to gather references, I highly recommend the Pinterest Chrome Extension to quickly save the images you come across.&lt;/p&gt;
+
+&lt;p&gt;This is the moodboard I made:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pinterest.it/bocchigiovanni/keeb/&quot;&gt;https://pinterest.it/bocchigiovanni/keeb/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/cXZQwrm.jpg&quot; alt=&quot;tray mount&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The design I chose is called a Tray Mount, you can learn more about keyboard design following these links:&lt;/p&gt;
+
+&lt;p&gt;Keyboard Construction Explained by Brian Lee:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://brianlee.blog/2018/11/23/guide-keyboard-construction-explained/&quot;&gt;https://brianlee.blog/2018/11/23/guide-keyboard-construction-explained/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Custom keyboard mounting styles by Thomas Baart:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://thomasbaart.nl/2019/04/07/cheat-sheet-custom-keyboard-mounting-styles/&quot;&gt;https://thomasbaart.nl/2019/04/07/cheat-sheet-custom-keyboard-mounting-styles/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Basically the plate keeps together the switches, the switches are soldered to the PCB, and the PCB is screwed to the case.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/dVer6mH.jpg&quot; alt=&quot;keyboard-layout-editor&quot; /&gt;
+Then I headed over at &lt;a href=&quot;http://keyboard-layout-editor.com/&quot;&gt;http://keyboard-layout-editor.com/&lt;/a&gt; and found out which layout I actually needed. It’s a keyboard meant for office use and I’m a 3D animator, so I can’t really work without the numpad. Ths layout has all the keys I need for my work and nothing more.&lt;/p&gt;
+
+&lt;p&gt;Once you have your layout, just copy the data from the Raw Data tab and go to this awesome website to generate the DXF file of your plate: &lt;a href=&quot;http://builder.swillkb.com/&quot;&gt;http://builder.swillkb.com/&lt;/a&gt;. Here you can choose which type of switch you are going to use and which type of stabilizers. For my build I chose Aliaz switches (they are MX mount), which are silent and tactile, and Cherry PCB-mount stabilizers. Here i also downloaded the CAD drawing of the plate.&lt;/p&gt;
+
+&lt;p&gt;It is at this point that I started to look for what keycap set to use. In the end I chose the Black DSA set from PMK:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pimpmykeyboard.com/dsa-black-white-keyset/&quot;&gt;https://pimpmykeyboard.com/dsa-black-white-keyset/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ll talk more about the shopping list later. I really like that the DSA profile has the same height for all the rows, it makes it easier to come up with unconventional layouts without worrying about different heights.&lt;/p&gt;
+
+&lt;p&gt;Before jumping into CAD, I made a quick concept render in Cinema 4D, one of the softwares I use in my work. It’s not free, but if you want to experiment with shapes, colours and materials without worrying about tolerances and other manufacturing holdups, Blender is a free open source software which will help you focus on the design side of your keyboard.
+If you are skilled in CAD modeling feel free to start your concept there, I just happen to be more familiar with 3D rendering softwares. Also, your final concept will look more convincing if done with a proper 3D rendering engine (I used Redshift, Blender has Cycles).&lt;/p&gt;
+
+&lt;p&gt;I imported the DXF file and I extruded it of 1,5mm, which is the thickness MX switches require to clip. I also used these DSA 3D models I found on Thingiverse:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://thingiverse.com/thing:2172302&quot;&gt;https://thingiverse.com/thing:2172302&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/KhIZgri.jpg&quot; alt=&quot;full rendering&quot; /&gt;
+This was my final concept.&lt;/p&gt;
+
+&lt;p&gt;Once I was happy with the look, I started to learn about custom PCBs. I thought about hand-wiring it, but the idea of making my own PCB seemed way more fun. I still wasn’t feeling comfortable about my soldering skills, so I ended up with using the PCB only to wire the keys together and to provide a socket for the microcontroller, which is a Teensy 2. To wire together the columns and rows I recommend heading over at Keyboard Firmware Builder and pasting your keyboard layout from KLE, and the website will make you a visual guide for your wiring. We’ll get back to that website once we are ready to compile the firmware. Choosing a controller is all about the pins, you need one with at least as many pins as the sum of your keyboard’s columns and rows. For me it was 25, and the Teensy 2 has just that, 25 pins! You can fit more columns and rows if you get creative with the wiring, but I didn’t have to.&lt;/p&gt;
+
+&lt;p&gt;If designing a PCB scares you, fear not! I followed this awesome guide by u/ai03:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wiki.ai03.me/books/pcb-design/chapter/pcb-designer-guide&quot;&gt;https://wiki.ai03.me/books/pcb-design/chapter/pcb-designer-guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The guide is very easy to follow and uses a free software called KiCad. It explains how to implement the microcontroller directly in the board, but instead I just grabbed a Teensy 2 footprint from the library provided in the guide and slapped it on the board. With this design, you just have to solder the switches, the diodes, the the Teensy itself with some header pins (they are cheap on Aliexpress).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/AiXmzQD.jpg&quot; alt=&quot;pcb design&quot; /&gt;
+This is what my PCB schematics looks like&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/KPdaVOk.jpg&quot; alt=&quot;pcb layout&quot; /&gt;
+And this is what my PCB layout looks like&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/M9P1n1U.jpg&quot; alt=&quot;pcb rendering&quot; /&gt;
+From KiCad you can export a 3D model of the PCB, which is going to be very useful for our CAD drawing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/k81o0Rw.jpg&quot; alt=&quot;usb-c pinout&quot; /&gt;
+Above is the USB Type-C pinout diagram.&lt;/p&gt;
+
+&lt;p&gt;The Teensy 2 is a mini-usb controller and I just couldn’t accept that. A device made in 2019 deserves to have a USB type-C connector and cable, so I made sure to implement that. My solution was to buy a USB-C daughter board and manually wire the pins to the mini-USB connector of the Teensy.&lt;/p&gt;
+
+&lt;p&gt;This is the board I got, it’s made by Pololu:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://coolcomponents.co.uk/products/usb-2-0-type-c-connector-breakout-board&quot;&gt;https://coolcomponents.co.uk/products/usb-2-0-type-c-connector-breakout-board&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;One thing that is very cool, is that before buying it you can download a 3D model of the connector, again, very useful for the CAD drawing.&lt;/p&gt;
+
+&lt;p&gt;You can also get a 3D model of the Teensy here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://grabcad.com/library/teensy-2-0-board-1&quot;&gt;https://grabcad.com/library/teensy-2-0-board-1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;USB-C works a bit differently compared to an old school USB connector. What you need to know is that all the pins are doubled because the connector is reversible, and each pair that you want to use needs to be wired together (see picture above). Luckily this board does that for me and is ready to use, it also has a couple of resistors that connect the CC pins to ground. Some people online say that you need the resistors, some people say that you don’t, so here’s my take on it: if you want to connect your keyboard with a USB-C to USB-A cable, you don’t need any resistor. You can just wire the GND, D-, D+ and VCC pins respectively from one connector to the other and it will work (double pins still need to be paired). Instead, if you want to connect you keyboard with a USB-C to USB-C cable, it’s only going to work if you have those resistors in place that ground your CC pins. This basically tells your computer that the keyboard is a device, and not a source of power.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/xscNnRN.jpg&quot; alt=&quot;case rendering&quot; /&gt;
+Now that we have every file we need, it is a good time to put everything together in a CAD software and design the actual shape of the case, to get it ready for 3D printing. 
+The software I used is Fusion360:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://autodesk.com/products/fusion-360/overview#banner&quot;&gt;https://autodesk.com/products/fusion-360/overview#banner&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s free for 1 year if you are a hobbyist, and for 3 years if you are a student. It is also much more intuitive than other CAD softwares, while also having specific tools for 3D printing. These are some useful videos about making an enclosure in Fusion360:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtube.com/watch?v=E0bhdr84FNU&quot;&gt;https://youtube.com/watch?v=E0bhdr84FNU&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtube.com/watch?v=g9mHhp_SHGE&quot;&gt;https://youtube.com/watch?v=g9mHhp_SHGE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtube.com/watch?v=YxBamwc6s7U&quot;&gt;https://youtube.com/watch?v=YxBamwc6s7U&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I started by making the case, and then I imported the plate DXF and the PCB model, and I adjusted the case so that it would fit all the components. Then I made standoffs to support the PCB and holes in the plate to allow for the screws to go in. The distance between the top of the PCB and the top of the plate must be 5mm, to allow space for the MX switches.&lt;/p&gt;
+
+&lt;p&gt;The screws I’m using are M2 button-head hex drive screws, you can insert them in your project by going to Insert &amp;gt; McMasterCarr Component and choosing from the menu. I bought mine from eBay. 
+Since the case is 3D printed, it is not possible to print a thread for such small screws, so what I did was making holes where a screw would go (like on the standoffs) with a 3,1mm diameter, so that I could then push inside a brass threaded insert using a soldering iron, to melt the plastic and glue it in place. The inserts I used are M2 Brass inserts I found on ebay, which have a 3,3mm diameter. Your hole needs to be 0,2mm smaller than the inserts, to make sure that it makes a tight fit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/K7FF3c9.jpg&quot; alt=&quot;usb-c rendering&quot; /&gt;
+Here’s a closeup of my USB port + daughter board.&lt;/p&gt;
+
+&lt;p&gt;I added some ridges at the bottom of the case to give it a bit more strength and to complete the design I made a top plate, 1,5mm thick, that closes the gap between the keys and the edge of the case. It was supposed to be held in place by magnets glued to the case (being made of mild steel), but in the end it turned out that the fit is so tight, that it just snaps into place. From then I exported the top plate sketch from Fusion into a DXF file, to be sent for laser cutting.&lt;/p&gt;
+
+&lt;p&gt;Since the case was going to be printed by an Ender 3 printer, I split it into 3 pieces (it’s a long keyboard), making sure to make some 2mm holes on the inner edge of every piece, to make it easier to glue it back together, like shown in this video (starting at 40:30) &lt;a href=&quot;https://youtube.com/watch?v=PW35zmq8M5o&quot;&gt;https://youtube.com/watch?v=PW35zmq8M5o&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can explore my CAD project in your browser:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://a360.co/2KE3Y0W&quot;&gt;https://a360.co/2KE3Y0W&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;CO$TS&lt;/p&gt;
+
+&lt;p&gt;Let’s talk money. Here’s how much I paid for each component, as well as the services I used. Note that I live in the UK, so your mileage may vary.&lt;/p&gt;
+
+&lt;p&gt;[Prices shown in British Pounds, all the prices include shipping]&lt;/p&gt;
+
+&lt;p&gt;Aliaz Switches x90 + Cherry stabs from KBDFans…………………..54£&lt;/p&gt;
+
+&lt;p&gt;Black DSA keycap set from PMK……………………………………………98£&lt;/p&gt;
+
+&lt;p&gt;Plate (aluminum) + Top plate (mild steel) at Laserboost………..97£&lt;/p&gt;
+
+&lt;p&gt;PCB x5 from JLCPCB……………………………………………………………..18£&lt;/p&gt;
+
+&lt;p&gt;Teensy 2 from Hobbytronics…………………………………………………18£&lt;/p&gt;
+
+&lt;p&gt;USB-C Breackout Board from Cool Components…………………….5£&lt;/p&gt;
+
+&lt;p&gt;Screws + Inserts + Diodes + mini usb connector from ebay…..13£&lt;/p&gt;
+
+&lt;p&gt;Tot……………………………………………………………………………………..303£&lt;/p&gt;
+
+&lt;p&gt;Luckily I didn’t have to spend money to print the case, because a friend of mine offered to help. If you don’t know anyone with a 3D printer, you may actually do, try asking around and if you are still unlucky you can head over to r/3Dprintmything and ask for help.&lt;/p&gt;
+
+&lt;p&gt;This shopping list doesn’t include the tools required, like the soldering iron, or the “consumables” like super glue or sand paper, which you may or may not already have. I’ll go over those shortly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/DPRn0f4.jpg&quot; alt=&quot;pcb&quot; /&gt;
+Electronic Assembly&lt;/p&gt;
+
+&lt;p&gt;I started with soldering the diodes. My design uses SMD diodes which are much faster to solder, and are not as difficult as many people think. I used 0,5 soldering wire from Mechanic and I followed these videos on YouTube:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtube.com/watch?v=f9fbqks3BS8&quot;&gt;https://youtube.com/watch?v=f9fbqks3BS8&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtube.com/watch?v=wEBrvfWwzuQ&quot;&gt;https://youtube.com/watch?v=wEBrvfWwzuQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The diodes need to be soldered in a specific direction: the arrow in your schematics indicates where the cathode is (the negative side) which is represented on the diode by a thin gray line, see picture above.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/VHeID5k.jpg&quot; alt=&quot;teensy pinout&quot; /&gt;
+Once the diodes were in place, I soldered the pins of the Teensy on the PCB using some header pins with a 2,54mm pitch, I just bought some cheap ones from Aliexpress (100 for 0,90$). The reason I didn’t solder the Teensy in place is that its footprint is located on top of two switches to save space (see picture above) which means that if I solder the Teensy now I cannot solder the switches anymore. Next, I clipped, lubed and installed the stabilizers following this guide:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtube.com/watch?v=u-HYNmtP1Hc&quot;&gt;https://youtube.com/watch?v=u-HYNmtP1Hc&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/vQBEmTR.jpg&quot; alt=&quot;after switch installation&quot; /&gt;
+I then snapped the plate onto the PCB. This was tricky because it’s a long board (20 columns) and the PCB is prone to warping, so it required some brute force. With the plate in place on the PCB, I started to clip the switches onto it, making sure that the pins were straight (they get bent easily during shipping). I then soldered the switches, and than the Teensy. This was very dangerous because there was no way I could test the pcb before soldering all the swithces and the Teensy in place, but it was the only way to accomplish this design.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/jepHFYC.jpg&quot; alt=&quot;usb-c pinout&quot; /&gt;
+To connect the Teensy to the daughter board, I bought a USB mini connector on Ebay and I soldered 4 wires on it following the diagram above (you can ignore the ID pin), and then I soldered them to the USB-C board following the text on it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/00wMEjo.jpg&quot; alt=&quot;3d-printed case&quot; /&gt;
+Parts out of the 3D printer, an Ender 3.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/yoVoYUB.jpg&quot; alt=&quot;3d-printed parts&quot; /&gt;
+The 3D printed parts (printed in PLA) had some under extrusion, which is a printing defect of some printers, basically some layers are the wrong thickness, and they leave lines like crevices on the print. To overcome this I sanded the prints with 220 grade sand paper to remove the outer imperfections and to prepare them to be primed with Rustoleum Primer, what will fill the crevices. Before doing that I glued them together using Loctite SuperGlue which works like a charm on PLA. I then used Polyfilla to seal the gaps, and then finally the primer (not before another round of sand paper). I then applied three coats of white matte paint.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/P5Dbp78.jpg&quot; alt=&quot;3d-printed holes&quot; /&gt;
+Be sure to protect your thread holes with masking tape before priming and painting, so that they don’t get clogged.&lt;/p&gt;
+
+&lt;p&gt;The threads are very easy to insert, just heat up a soldering iron with a medium or large tip, and push them in. Be careful not to leave the iron there more than necessary or you risk melting the standoffs completely, follow this giude for more details:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://matterhackers.com/articles/fasteners-for-3d-printing&quot;&gt;https://matterhackers.com/articles/fasteners-for-3d-printing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mHt29iS.jpg&quot; alt=&quot;combined 3d-printed parts&quot; /&gt;
+Polyfilla applied after gluing&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/orCETth.jpg&quot; alt=&quot;primered case&quot; /&gt;
+Rustoleum Primer applied&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/WeNhaAl.jpg&quot; alt=&quot;painted case&quot; /&gt;
+Matte white paint&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Apv2L57.jpg&quot; alt=&quot;usb-c to teensy&quot; /&gt;
+After all that soldering, sanding, priming, and painting, it was finally time to put the whole thing together.&lt;/p&gt;
+
+&lt;p&gt;I secured the USB-C board with two M2 screws, and I attached the connector to the Teensy.
+Then I flipped the board over and I screwed it in place using a 1,3mm allen key.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/8ZFTnrR.jpg&quot; alt=&quot;rendering of controller placement&quot; /&gt;
+The board wasn’t fitting all the way in, because of the header pins of the daughter board.
+So I had to chop them off, and they are still touching the PCB a bit, but it’s fine. I made sure to put a strip of electric tape on the pins to isolate them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/UNSGZgA.jpg&quot; alt=&quot;complete build&quot; /&gt;
+Finally the keycaps and the top plate, which initially wasn’t fitting at all! The bottom keys where jamming against it because the lower edge was too wide. So I had to use a file to file down the steel to be the right size.&lt;/p&gt;
+
+&lt;p&gt;Not fun.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/90WUuUj.jpg&quot; alt=&quot;completed keyboard&quot; /&gt;
+After painting the top plate with Rustoleum Satin Black and snapping it on top, this is what it looks like.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/9oTOJ87.jpg&quot; alt=&quot;beauty pic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://old.reddit.com/r/MechanicalKeyboards/&quot;&gt;r/mechanicalkeyboard&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/8CxJiyg.jpg&quot; alt=&quot;firmware&quot; /&gt;
+FIRMWARE&lt;/p&gt;
+
+&lt;p&gt;I going to explain how to compile a firmware in the easiest way possible, which is using Keyboard Firmware Builder (&lt;a href=&quot;https://kbfirmware.com/&quot;&gt;https://kbfirmware.com/&lt;/a&gt;) to create a starting point. You could use that as your final firmware, but I recommend setting up a QMK environment on your computer to tweak it to suit your needs, in case you need more advanced functions like Unicode support or special keycodes.&lt;/p&gt;
+
+&lt;p&gt;KFB is very easy to use, just import your keyboard layout from Keyboard Layout Editor and a wiring diagram will appear. From then you just need to go through the tabs and give the website all the information it needs. In the Wiring tab you don’t need to do anything since your PCB should already be wired that way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/mqckLVM.jpg&quot; alt=&quot;teensy pinout&quot; /&gt;
+The Pins tab require you to specify which pins are your column and rows wired to. To do this I opened up KiCad and compared my schematics to the Teensy 2 pinout diagram, to find the name of the pins. For example I can see on the left that my ROW0 is wired to 21_A0, I look for pin 21 on the right and I find out that it is called F0, so in the website I link ROW0 to F0. I did this for all the pins.&lt;/p&gt;
+
+&lt;p&gt;The keymap tab is very straightforward, just click on each button and assign which key you want it to be. To create a momentary layer, assign M(1) to the key, so that when that key is held pressed, layer 1 will activate.
+I didn’t change any other setting and I downloaded the source code for later editing. if you are satisfied with the firmware as it is, you can hit the compile button and flash it on your keyboard. The Teensy 2 is very easy to flash, you only need a small software called Teensy Loader:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pjrc.com/teensy/loader.html&quot;&gt;https://pjrc.com/teensy/loader.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When the software is open, just push the button on the Teensy (or hit the soft reset shortcut on your keyboard), select your .hex file from the File menu, and hit the Program button followed by the Reboot button. The keyboard should now be perfectly functional!
+I won’t go into the manual programming of the keyboard because I’m not an expert, but you can learn more about it here:&lt;/p&gt;
+
+&lt;p&gt;The Complete Newbs Guide To QMK&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.qmk.fm/#/newbs?id=the-complete-newbs-guide-to-qmk&quot;&gt;https://docs.qmk.fm/#/newbs?id=the-complete-newbs-guide-to-qmk&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ABOUT MY STLs&lt;/p&gt;
+
+&lt;p&gt;I learned a lot with this project, but i’d prefer not to share my STL and DXF files, because this is my first keyboard and they have a lot of defects, as I explained above. The case is super thin around the USB port, so it’s very fragile right now and  there’s already a tiny crack. The steel top plate didn’t fit with my keycaps at first and I had to file it down, it’s still not 100% precise as of now, I’ll have to bend it in some way. The USB daughter board sits too high and grinds against the PCB, because of this the whole board sits in a warped position. The keys sit higher near the left and right edges, and are lower in the center and I’m not sure why.&lt;/p&gt;
+
+&lt;p&gt;You can have a look at the CAD project here: &lt;a href=&quot;https://a360.co/2KE3Y0W&quot;&gt;https://a360.co/2KE3Y0W&lt;/a&gt; if you want to make a similar design, but my STL files are not worth sharing in my opinion, since I have still much to learn.
+Feel free to message me at &lt;a href=&quot;https://old.reddit.com/user/gio_motion&quot;&gt;u/gio_motion&lt;/a&gt; or on Instagram at &lt;a href=&quot;https://www.instagram.com/gio_motion/&quot;&gt;@gio_motion&lt;/a&gt; if you have any question!
+I hope this explanation is helpful to someone and I hope it will inspire more people to make their own design instead of buying a kit that doesn’t leave much space for customization.&lt;/p&gt;
+
+&lt;p&gt;Last thing, I still have 4 spare copies of my PCB, so if someone is interested just hit me up!&lt;/p&gt;
+
+&lt;p&gt;Gio&lt;/p&gt;</content><author><name>Hisfantor</name></author><summary type="html"></summary></entry><entry><title type="html">December 30 2018</title><link href="http://0.0.0.0:4000/linux/2018/12/30/day30.html" rel="alternate" type="text/html" title="December 30 2018" /><published>2018-12-30T00:00:00+01:00</published><updated>2018-12-30T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/2018/12/30/day30</id><content type="html" xml:base="http://0.0.0.0:4000/linux/2018/12/30/day30.html">&lt;h3 id=&quot;desktop-updates&quot;&gt;Desktop updates:&lt;/h3&gt;
+
+&lt;h3 id=&quot;notebook&quot;&gt;Notebook:&lt;/h3&gt;
+
+&lt;h4 id=&quot;windows-fucked-up-my-external-drive&quot;&gt;windows fucked up my external drive&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;used my external drive on a friends PC under windows&lt;/li&gt;
+  &lt;li&gt;after that I couldn’t even mount the drive and got the following error:
+&lt;img src=&quot;https://i.imgur.com/Q1ydJzu.png&quot; alt=&quot;Error mounting filesystem&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;the error is kinda helpful but not really&lt;/li&gt;
+  &lt;li&gt;what I did(and worked for me):&lt;/li&gt;
+  &lt;li&gt;boot into windows and check the drive letter&lt;/li&gt;
+  &lt;li&gt;open cmd as admin&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chkdsk /F d:&lt;/code&gt; (d is the drive letter)&lt;/li&gt;
+  &lt;li&gt;this command checks and repairs the NTFS filesystem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mobile&quot;&gt;mobile:&lt;/h3&gt;
+&lt;p&gt;fing ssh&lt;/p&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="NAS" /><category term="december-project" /><summary type="html">Desktop updates:</summary></entry><entry><title type="html">December 27 2018</title><link href="http://0.0.0.0:4000/linux/2018/12/27/day27.html" rel="alternate" type="text/html" title="December 27 2018" /><published>2018-12-27T00:00:00+01:00</published><updated>2018-12-27T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/2018/12/27/day27</id><content type="html" xml:base="http://0.0.0.0:4000/linux/2018/12/27/day27.html">&lt;h3 id=&quot;notebook&quot;&gt;Notebook&lt;/h3&gt;
+
+&lt;h4 id=&quot;nvidia-drivers1&quot;&gt;nvidia drivers&lt;sup&gt;1&lt;/sup&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;I always did it like &lt;a href=&quot;http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drivers-in-linux&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;but now I always get &lt;code class=&quot;highlighter-rouge&quot;&gt;E: Unable to locate package nvidia-410&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;so I opend &lt;code class=&quot;highlighter-rouge&quot;&gt;Software and Updates&lt;/code&gt; via cmd with &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo software-properties-gtk&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;first I deleted all the graphics drivers ppas in &lt;code class=&quot;highlighter-rouge&quot;&gt;other software&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;but then also installed the driver via this tool in the &lt;code class=&quot;highlighter-rouge&quot;&gt;additional drivers&lt;/code&gt; tab&lt;/li&gt;
+  &lt;li&gt;reboot&lt;/li&gt;
+  &lt;li&gt;checked for the install by opening &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia-settings&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;it schould look something like this:
+&lt;img src=&quot;https://i.imgur.com/RaLr3dD.png&quot; alt=&quot;nvidia settings&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;or just use &lt;code class=&quot;highlighter-rouge&quot;&gt;lsmod | grep nvidia&lt;/code&gt; and if you get an output the driver has sucessfully installed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;cpu-temp2&quot;&gt;CPU temp&lt;sup&gt;2&lt;/sup&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;my notebook freezes from time to time and even SysRq shortcuts won’t help&lt;/li&gt;
+  &lt;li&gt;I have to look further into it but for now I installed &lt;code class=&quot;highlighter-rouge&quot;&gt;lm-sensors&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install lm-sensors&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;start it with &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo sensors-detect&lt;/code&gt; accept everything with yes&lt;/li&gt;
+  &lt;li&gt;run &lt;code class=&quot;highlighter-rouge&quot;&gt;sensors&lt;/code&gt; to see the temps&lt;/li&gt;
+  &lt;li&gt;output:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;hisfantor@ ~ &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sensors
+coretemp-isa-0000
+Adapter: ISA adapter
+Package &lt;span class=&quot;nb&quot;&gt;id &lt;/span&gt;0:  +62.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;high &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C, crit &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 0:        +51.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;high &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C, crit &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 1:        +51.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;high &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C, crit &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 2:        +54.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;high &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C, crit &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Core 3:        +62.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;high &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C, crit &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +100.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+acpitz-virtual-0
+Adapter: Virtual device
+temp1:        +62.0°C  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;crit &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; +105.0°C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+iwlwifi-virtual-0
+Adapter: Virtual device
+temp1:        +42.0°C  
+
+pch_skylake-virtual-0
+Adapter: Virtual device
+temp1:        +45.0°C  
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;don’t know why high and crit aren’t working properly but whatever&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;jekyll-error3&quot;&gt;jekyll error&lt;sup&gt;3&lt;/sup&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;got this while testing locally&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Liquid Exception: no implicit conversion of Float into String &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /_layouts/post.html
+jekyll 3.8.1 | Error:  no implicit conversion of Float into String
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;the problem was that I used the date as my post title:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title: 27.12
+published: false
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;changed it to &lt;code class=&quot;highlighter-rouge&quot;&gt;day27&lt;/code&gt; and it works fine&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;knowledge-sauces&quot;&gt;knowledge sauces:&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa&quot;&gt;https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature&quot;&gt;https://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll/issues/6319&quot;&gt;https://github.com/jekyll/jekyll/issues/6319&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="december-project" /><category term="jekyll" /><summary type="html">Notebook</summary></entry><entry><title type="html">December 26 2018</title><link href="http://0.0.0.0:4000/linux/2018/12/26/updates.html" rel="alternate" type="text/html" title="December 26 2018" /><published>2018-12-26T00:00:00+01:00</published><updated>2018-12-26T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/2018/12/26/updates</id><content type="html" xml:base="http://0.0.0.0:4000/linux/2018/12/26/updates.html">&lt;h3 id=&quot;desktop-updates&quot;&gt;Desktop updates:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;installed:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gpicview		&lt;span class=&quot;c&quot;&gt;#picture viewer&lt;/span&gt;
+evince			&lt;span class=&quot;c&quot;&gt;#pdf viewer&lt;/span&gt;
+lxappearance		&lt;span class=&quot;c&quot;&gt;#gtk styling and iconpack&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;notebook&quot;&gt;Notebook:&lt;/h3&gt;
+
+&lt;h4 id=&quot;remounting-with-read-write-rights&quot;&gt;remounting with read write rights&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;I booted into windows via the external SSD and searched for a file on my second internal disk&lt;/li&gt;
+  &lt;li&gt;than went back to linux and had no writing rights on this drive, the following command solved it:&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo mount -o remount,rw '/media/hisfantor/data/'&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;in which &lt;code class=&quot;highlighter-rouge&quot;&gt;/media/hisfantor/data/&lt;/code&gt; is my mount point&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;rubiks-cube&quot;&gt;rubiks cube&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;he wrote a program to simmulate a rubiks cube with variable size&lt;/li&gt;
+  &lt;li&gt;the program can simulate and solve cubes up to 101x101x101 (your PC hardware is the limiting factor)&lt;/li&gt;
+  &lt;li&gt;video: &lt;a href=&quot;https://www.youtube.com/watch?v=IM2czqavlWM&quot;&gt;https://www.youtube.com/watch?v=IM2czqavlWM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;code: &lt;a href=&quot;https://github.com/Code-Bullet/RubiksCubeAI&quot;&gt;https://github.com/Code-Bullet/RubiksCubeAI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;IDE: &lt;a href=&quot;https://processing.org/download/&quot;&gt;https://processing.org/download/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt; to rotate the cube with your mouse &lt;code class=&quot;highlighter-rouge&quot;&gt;space&lt;/code&gt; to start/stop scrambling/solving&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;git-branches1&quot;&gt;git branches&lt;sup&gt;1&lt;/sup&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;name_of_your_new_branch]
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-am&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;msg&quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push origin &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;name_of_your_new_branch]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h4 id=&quot;git-prompt2&quot;&gt;git prompt&lt;sup&gt;2&lt;/sup&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;download it &lt;a href=&quot;https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh&quot;&gt;here&lt;/a&gt; and put it in a file in your home directory&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.git-prompt.sh&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;then open your &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt; and put in:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.git-prompt.sh
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PS1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\[\0&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;33[36m&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\]\u\[\0&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;33[m&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\]&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\[\0&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;33[32m&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\]&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\[\0&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;33[33;1m&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\]\w\[\0&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;33[m&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\]&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; (&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\$&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;(git branch 2&amp;gt;/dev/nul    l | grep '^*' | colrm 1 2)) &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\$&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;the second line will change your command-line prompt to:&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[user]@ [file path] ([git branch]) $&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;pulseaudio-shortcuts3&quot;&gt;pulseaudio shortcuts&lt;sup&gt;3&lt;/sup&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;first I recognised that pavucontrol and pulseaudio are the same thing… I thought they were different because my soundkeys stopped working when I opend pavucontrol&lt;/li&gt;
+  &lt;li&gt;my old settings:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bindsym XF86AudioRaiseVolume &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-startup-id&lt;/span&gt; pactl set-sink-volume 0 +5% &lt;span class=&quot;c&quot;&gt;#increase sound volume4 &lt;/span&gt;
+bindsym XF86AudioLowerVolume &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-startup-id&lt;/span&gt; pactl set-sink-volume 0 &lt;span class=&quot;nt&quot;&gt;-5&lt;/span&gt;% &lt;span class=&quot;c&quot;&gt;#decrease sound volume &lt;/span&gt;
+bindsym XF86AudioMute &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-startup-id&lt;/span&gt; pactl set-sink-mute 0 toggle &lt;span class=&quot;c&quot;&gt;# mute sound&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;new settings:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bindsym XF86AudioRaiseVolume &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-startup-id&lt;/span&gt; amixer &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; pulse sset Master 5%+ &lt;span class=&quot;c&quot;&gt;#increase sound volume&lt;/span&gt;
+bindsym XF86AudioLowerVolume &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-startup-id&lt;/span&gt; amixer &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; pulse sset Master 5%- &lt;span class=&quot;c&quot;&gt;#decrease sound volume&lt;/span&gt;
+bindsym XF86AudioMute &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--no-startup-id&lt;/span&gt; amixer &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; pulse &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;Master 1+ toggle &lt;span class=&quot;c&quot;&gt;# mute sound&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alsamixer&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;seems to work great (all in my &lt;code class=&quot;highlighter-rouge&quot;&gt;~/config/i3/config&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;knowledge-sauces&quot;&gt;knowledge sauces:&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches&quot;&gt;https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://qualitycoding.org/git-power-tools/&quot;&gt;https://qualitycoding.org/git-power-tools/&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://gist.github.com/justintv/168835&quot;&gt;https://gist.github.com/justintv/168835&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://askubuntu.com/questions/97936/terminal-command-to-set-audio-volume&quot;&gt;https://askubuntu.com/questions/97936/terminal-command-to-set-audio-volume&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer&quot;&gt;https://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="software" /><category term="december-project" /><category term="git" /><summary type="html">Desktop updates: installed:</summary></entry><entry><title type="html">December 05 2018</title><link href="http://0.0.0.0:4000/linux/raspberry/2018/12/05/day5.html" rel="alternate" type="text/html" title="December 05 2018" /><published>2018-12-05T00:00:00+01:00</published><updated>2018-12-05T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/raspberry/2018/12/05/day5</id><content type="html" xml:base="http://0.0.0.0:4000/linux/raspberry/2018/12/05/day5.html">&lt;h2 id=&quot;pc-stuff&quot;&gt;PC stuff:&lt;/h2&gt;
+&lt;h3 id=&quot;desktop-updates&quot;&gt;Desktop updates:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;I started using the latest Ubuntu server version in the attempt to build a slim OS to use on any system&lt;/li&gt;
+  &lt;li&gt;I use I3 as my window manager&lt;/li&gt;
+  &lt;li&gt;but ince then I ecperienced some random crashes and freezes and the beautiful “Aw, Snap! Something went wrong…” in chromium, not sure why&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;blog&quot;&gt;Blog:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll s --unpublished&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll s -u&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;just to run the jekyll server with unpublished posts included&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;notebook&quot;&gt;Notebook:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;ocamlfuse fucks with me and I have to remount it after each reboot&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;boot-via-external-ssd&quot;&gt;boot via external SSD:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;I used an PCB of an external HDD( which I took apart to place the HDD in my Desktop) and put my old SSD in&lt;/li&gt;
+  &lt;li&gt;connected it to power and via USB(3.0)&lt;/li&gt;
+  &lt;li&gt;went into my BIOS(pressing F2 at startup) and enabled USB boot (boot mode: legacy)&lt;/li&gt;
+  &lt;li&gt;restart and into the bootmenu(pressing F12) choose the external disk(under USB)&lt;/li&gt;
+  &lt;li&gt;it booted right into the UEFI menu with options for Ubuntu and Windows&lt;/li&gt;
+  &lt;li&gt;since I tested this to use windows without having it on the main PC drives I started it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;had-to-update-the-graphics-drivers&quot;&gt;had to update the graphics drivers:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;uninstalled everything nvida related&lt;/li&gt;
+  &lt;li&gt;reboot&lt;/li&gt;
+  &lt;li&gt;got the lates drivers for my mx150 from nvidias website&lt;/li&gt;
+  &lt;li&gt;ran the installer&lt;/li&gt;
+  &lt;li&gt;reboot&lt;/li&gt;
+  &lt;li&gt;everything fine, card is recognised in the device and task manager(same with CPU, all disks and wifi card)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;raspberry-plesure&quot;&gt;Raspberry plesure:&lt;/h2&gt;
+&lt;h3 id=&quot;pi-calendar&quot;&gt;Pi Calendar:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;I checked out &lt;a href=&quot;https://www.youtube.com/watch?v=Idu8XfwKUao&quot;&gt;this video&lt;/a&gt; to learn about sprite collision detection in python to work on day4&lt;/li&gt;
+  &lt;li&gt;so I started using pygame as well&lt;/li&gt;
+  &lt;li&gt;it’s already working but I want to make it nice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pi-zero&quot;&gt;Pi Zero:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;first setup ever&lt;/li&gt;
+  &lt;li&gt;I found a micro to mini USB which allowed me to connect my keyboard(otherwise I wouldn’t had been able to communicate with the Pi zero thanks to his inconvinient micro usb port placement)&lt;/li&gt;
+  &lt;li&gt;only thing to mention with the setup is that you have to press &lt;code class=&quot;highlighter-rouge&quot;&gt;space&lt;/code&gt; to check a box in the setup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;ssh&quot;&gt;SSH:&lt;/h4&gt;
+&lt;h4 id=&quot;on-the-pihost&quot;&gt;on the Pi(host):&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;open terminal &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + Alt + T&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl enable ssh&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl start ssh&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;on-your-pcclient&quot;&gt;on your PC(client):&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh pi@raspberrypi.local&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;because we haven’t changed the pi’s name there will be a warning like:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The ECDSA host key for raspberrypi.local has changed,
+and the key for the corresponding IP address 192.168.0.200
+is unknown. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:5FuzlLJo30I3uGNK1uRcieL4H776KeWzmz3aNyrzzDk.
+Please contact your system administrator.
+Add correct host key in /home/hisfantor/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /home/hisfantor/.ssh/known_hosts:17
+  remove with:
+  ssh-keygen -f &quot;/home/hisfantor/.ssh/known_hosts&quot; -R &quot;raspberrypi.local&quot;
+ECDSA host key for raspberrypi.local has changed and you have requested strict checking.
+Host key verification failed.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;so just do what it tells you &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-keygen -f &quot;/home/hisfantor/.ssh/known_hosts&quot; -R &quot;raspberrypi.local&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;then SSH again and type in the password which I have chosen while setting up the Pi&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="december-project" /><category term="python" /><summary type="html">PC stuff: Desktop updates: I started using the latest Ubuntu server version in the attempt to build a slim OS to use on any system I use I3 as my window manager but ince then I ecperienced some random crashes and freezes and the beautiful “Aw, Snap! Something went wrong…” in chromium, not sure why</summary></entry><entry><title type="html">December 04 2018</title><link href="http://0.0.0.0:4000/linux/raspberry/2018/12/04/day4.html" rel="alternate" type="text/html" title="December 04 2018" /><published>2018-12-04T00:00:00+01:00</published><updated>2018-12-04T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/raspberry/2018/12/04/day4</id><content type="html" xml:base="http://0.0.0.0:4000/linux/raspberry/2018/12/04/day4.html">&lt;h3 id=&quot;desktop-updates&quot;&gt;Desktop updates:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;added some characters from the german keyboard layout that I’m missing using the american one so I created the file &lt;code class=&quot;highlighter-rouge&quot;&gt;.Xmodmap&lt;/code&gt; in the home directory
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;keycode 108 = Mode_switch Multi_key
+keycode 38 = a A adiaeresis Adiaeresis
+keycode 39 = s S ssharp ssharp
+keycode 30 = u U udiaeresis Udiaeresis
+keycode 32 = o O odiaeresis Odiaeresis
+keycode 49 = asciitilde grave degree 
+keycode 11 = 2 at twosuperior
+keycode 12 = 3 numbersign threesuperior
+keycode 26 = e E EuroSign
+keycode 27 = r R registered
+keycode 21 = equal plus plusminus
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;to activat it just run &lt;code class=&quot;highlighter-rouge&quot;&gt;xmodmap ~/.Xmodmap&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;I wrote this file innitially for my notebook but it works great on my custoum mechanical keyboard as well&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pi-calendar&quot;&gt;Pi Calendar:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Mission is to do it all with python from now on, but now the introduced graphics so let’s see&lt;/li&gt;
+  &lt;li&gt;first I had to install &lt;code class=&quot;highlighter-rouge&quot;&gt;graphics.py&lt;/code&gt; I got the code from &lt;a href=&quot;http://mcsp.wartburg.edu/zelle/python/graphics.py&quot;&gt;here&lt;/a&gt; and placed the file in &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/lib/python3/dist-packages&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;also had to install Tkinter via &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install python3-tk&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;installed &lt;code class=&quot;highlighter-rouge&quot;&gt;pygame&lt;/code&gt; with &lt;a href=&quot;https://www.pygame.org/wiki/CompileUbuntu?parent=&quot;&gt;this&lt;/a&gt; instructions&lt;/li&gt;
+  &lt;li&gt;drew an image and a box but I cant check these for collision so I have to change to sprites tomorrow&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="electrinics" /><category term="december-project" /><category term="python" /><summary type="html">Desktop updates: added some characters from the german keyboard layout that I’m missing using the american one so I created the file .Xmodmap in the home directory keycode 108 = Mode_switch Multi_key keycode 38 = a A adiaeresis Adiaeresis keycode 39 = s S ssharp ssharp keycode 30 = u U udiaeresis Udiaeresis keycode 32 = o O odiaeresis Odiaeresis keycode 49 = asciitilde grave degree keycode 11 = 2 at twosuperior keycode 12 = 3 numbersign threesuperior keycode 26 = e E EuroSign keycode 27 = r R registered keycode 21 = equal plus plusminus to activat it just run xmodmap ~/.Xmodmap I wrote this file innitially for my notebook but it works great on my custoum mechanical keyboard as well</summary></entry><entry><title type="html">December 03 2018</title><link href="http://0.0.0.0:4000/linux/raspberry/2018/12/03/day3.html" rel="alternate" type="text/html" title="December 03 2018" /><published>2018-12-03T00:00:00+01:00</published><updated>2018-12-03T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/raspberry/2018/12/03/day3</id><content type="html" xml:base="http://0.0.0.0:4000/linux/raspberry/2018/12/03/day3.html">&lt;h3 id=&quot;desktop-updates&quot;&gt;Desktop updates:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;installed a video player &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install mvp&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;installed a disk manager via &lt;code class=&quot;highlighter-rouge&quot;&gt;audo apt install gnome-disk-utility&lt;/code&gt; which can be opened via &lt;code class=&quot;highlighter-rouge&quot;&gt;gnome-disks&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;fuck this, formated the 6TB drive to ext4 via gparted and mounted it in &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/hisfantor/internal&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;gave me all rights on the disk via &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo chmod 777 /home/hisfantor/internal&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;started transfer of 1.1TB of movies, with a current write speed of 73MB/s&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;workshop-pc&quot;&gt;Workshop PC:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;checked Solidworks instalation -&amp;gt; all good for now&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;notebook&quot;&gt;Notebook:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;I used my google drive via a server connection in nautilus, but I couldn’t live edit an html file so I wanted to use &lt;code class=&quot;highlighter-rouge&quot;&gt;google-drive-ocamlfuse&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;had some trouble installing it the usual way like described &lt;a href=&quot;https://www.omgubuntu.co.uk/2017/04/mount-google-drive-ocamlfuse-linux&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I found the ppa on &lt;a href=&quot;https://launchpad.net/~alessandro-strada/+archive/ubuntu/google-drive-ocamlfuse-beta/+build/15331130&quot;&gt;here&lt;/a&gt; and downloaded the .deb manually&lt;/li&gt;
+  &lt;li&gt;then installed it via &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo dpkg -i /path/to/deb/file &amp;amp;&amp;amp; sudo apt-get install -f&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;also included &lt;code class=&quot;highlighter-rouge&quot;&gt;exec_always google-drive-ocamlfuse ~/googledrive&lt;/code&gt; in my i3 config&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pi-calendar&quot;&gt;Pi Calendar:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;introduction of a second led and loop functions&lt;/li&gt;
+  &lt;li&gt;I had enough of the visual programing in Sketch and switched to python on the commandline&lt;/li&gt;
+  &lt;li&gt;make sure you have &lt;code class=&quot;highlighter-rouge&quot;&gt;python-rpi.gpio&lt;/code&gt; installed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;RPi.GPIO&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt; 		
+&lt;span class=&quot;c1&quot;&gt;#improting the GPIO functions
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;						
+&lt;span class=&quot;c1&quot;&gt;#time for pauses between steps
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setmode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BCM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;			
+&lt;span class=&quot;c1&quot;&gt;#that's the method how to assign the pins
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		
+&lt;span class=&quot;c1&quot;&gt;# use the pins as out
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;		
+&lt;span class=&quot;c1&quot;&gt;#I used the same pins as the calendar
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt; 						
+&lt;span class=&quot;c1&quot;&gt;#varable for timing(t in s)
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;					
+&lt;span class=&quot;c1&quot;&gt;# I used the two LEDs to make a little morse code
+# dot/short is the first LED
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HIGH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;	
+	&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;dash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;						
+&lt;span class=&quot;c1&quot;&gt;#dash/long is the second LED
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HIGH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;						
+&lt;span class=&quot;c1&quot;&gt;#in between letters both LEDs light up
+&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HIGH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HIGH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;LOW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#...
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;GPIO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cleanup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;					
+&lt;span class=&quot;c1&quot;&gt;#stes back all the GPIO settings and turns everything off
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;that’s my first code in Python ever and I really like it, its conda confusing that a function block is defined by tabs and not curly brackets&lt;/li&gt;
+  &lt;li&gt;also it’s awesome experimenting with the GPIO pins, all the potential it brings to the table!&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="electrinics" /><category term="python" /><summary type="html">Desktop updates: installed a video player sudo apt install mvp installed a disk manager via audo apt install gnome-disk-utility which can be opened via gnome-disks fuck this, formated the 6TB drive to ext4 via gparted and mounted it in /home/hisfantor/internal gave me all rights on the disk via sudo chmod 777 /home/hisfantor/internal started transfer of 1.1TB of movies, with a current write speed of 73MB/s</summary></entry><entry><title type="html">December 02 2018</title><link href="http://0.0.0.0:4000/linux/raspberry/2018/12/02/day2.html" rel="alternate" type="text/html" title="December 02 2018" /><published>2018-12-02T00:00:00+01:00</published><updated>2018-12-02T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/raspberry/2018/12/02/day2</id><content type="html" xml:base="http://0.0.0.0:4000/linux/raspberry/2018/12/02/day2.html">&lt;h3 id=&quot;desktop-updates&quot;&gt;Desktop updates:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;uploaded day1 and made some tweaks to older posts, trying to figure out the problem with the tables
+    &lt;ul&gt;
+      &lt;li&gt;do to all the testing I use &lt;code class=&quot;highlighter-rouge&quot;&gt;git add -A &amp;amp;&amp;amp; git commit -m 'day one8' &amp;amp;&amp;amp; git push&lt;/code&gt; to create posts in one line, the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&amp;amp;&lt;/code&gt; waits for the first command to finish&lt;/li&gt;
+      &lt;li&gt;my mistake was that I didn’t hat a free line between the header and the table…&lt;/li&gt;
+      &lt;li&gt;fucked up the backup from yesterday so I had to start over again…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pi-calendar&quot;&gt;Pi Calendar&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;connected the red LED to pins 6(gnd) and 12(GPIO18)&lt;/li&gt;
+  &lt;li&gt;Started the preinstalled program Sctretch&lt;/li&gt;
+  &lt;li&gt;opened the file 02led02&lt;/li&gt;
+  &lt;li&gt;tweked the delay, added an other blink and a delay in between&lt;/li&gt;
+  &lt;li&gt;run the program with the green flag in the top right corner&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="git" /><category term="december-project" /><summary type="html">Desktop updates: uploaded day1 and made some tweaks to older posts, trying to figure out the problem with the tables do to all the testing I use git add -A &amp;amp;&amp;amp; git commit -m 'day one8' &amp;amp;&amp;amp; git push to create posts in one line, the &amp;amp;&amp;amp; waits for the first command to finish my mistake was that I didn’t hat a free line between the header and the table… fucked up the backup from yesterday so I had to start over again…</summary></entry><entry><title type="html">December 01 2018</title><link href="http://0.0.0.0:4000/linux/raspberry/2018/12/01/day1.html" rel="alternate" type="text/html" title="December 01 2018" /><published>2018-12-01T00:00:00+01:00</published><updated>2018-12-01T00:00:00+01:00</updated><id>http://0.0.0.0:4000/linux/raspberry/2018/12/01/day1</id><content type="html" xml:base="http://0.0.0.0:4000/linux/raspberry/2018/12/01/day1.html">&lt;h3 id=&quot;desktop-updates&quot;&gt;Desktop updates:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;installed spotify with: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo snap install spotify&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Trying to install nvidia drivers… freeze while rebooting
+    &lt;ul&gt;
+      &lt;li&gt;while booting enter GRUB with &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Alt&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Del&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;or &lt;code class=&quot;highlighter-rouge&quot;&gt;F12&lt;/code&gt; to get into bootorder and chose UEF&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Advanced options -&amp;gt; Recovery mode -&amp;gt; root&lt;/li&gt;
+      &lt;li&gt;might have to remount filesystem first &lt;code class=&quot;highlighter-rouge&quot;&gt;mount -o rw,remount /&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;delete the drivers with &lt;code class=&quot;highlighter-rouge&quot;&gt;apt purge nvidia*&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;reboot&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;copiing files from old SSD to External 4TB (and started full backup on 6TB drive)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo fdisk -l&lt;/code&gt; to show all drives&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mkdir /home/&amp;lt;username&amp;gt;/&amp;lt;folder for drive&amp;gt;&lt;/code&gt; to create a folder to mount to&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo mount -t ntfs /dev/&amp;lt;partition name&amp;gt; /home/&amp;lt;username&amp;gt;/&amp;lt;folder for drive&amp;gt;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo umount /dev/&amp;lt;partition name&amp;gt;&lt;/code&gt; unmount drive if you need it&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pi-calendar&quot;&gt;Pi Calendar&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;installation of Raspbian
+    &lt;ul&gt;
+      &lt;li&gt;SSD full -&amp;gt; format usb to get stuff of with &lt;code class=&quot;highlighter-rouge&quot;&gt;gnome-disks&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;or just fucking use your notebook to download the OS&lt;/li&gt;
+      &lt;li&gt;make bootable USB with &lt;code class=&quot;highlighter-rouge&quot;&gt;usb-creator-gtk&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;updates(automatically) and I installed &lt;code class=&quot;highlighter-rouge&quot;&gt;nautilus&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;downloaded files from http://bit.ly/c-adventskalender-raspberry-pi-18&lt;/li&gt;
+  &lt;li&gt;could’t find the right resistor so I used a red LED wich actually uses 3.3V&lt;/li&gt;
+  &lt;li&gt;held it up to the pins (1(3.3V) and 6(gnd)) and it glows, yey&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Hisfantor</name></author><category term="setup" /><category term="drivers" /><category term="electrinics" /><category term="december-project" /><summary type="html">Desktop updates: installed spotify with: sudo snap install spotify Trying to install nvidia drivers… freeze while rebooting while booting enter GRUB with Ctrl+Alt+Del or F12 to get into bootorder and chose UEF Advanced options -&amp;gt; Recovery mode -&amp;gt; root might have to remount filesystem first mount -o rw,remount / delete the drivers with apt purge nvidia* reboot copiing files from old SSD to External 4TB (and started full backup on 6TB drive) sudo fdisk -l to show all drives mkdir /home/&amp;lt;username&amp;gt;/&amp;lt;folder for drive&amp;gt; to create a folder to mount to sudo mount -t ntfs /dev/&amp;lt;partition name&amp;gt; /home/&amp;lt;username&amp;gt;/&amp;lt;folder for drive&amp;gt; sudo umount /dev/&amp;lt;partition name&amp;gt; unmount drive if you need it</summary></entry><entry><title type="html">some Podcasts</title><link href="http://0.0.0.0:4000/podcasts/2018/04/15/podcasts.html" rel="alternate" type="text/html" title="some Podcasts" /><published>2018-04-15T00:00:00+02:00</published><updated>2018-04-15T00:00:00+02:00</updated><id>http://0.0.0.0:4000/podcasts/2018/04/15/podcasts</id><content type="html" xml:base="http://0.0.0.0:4000/podcasts/2018/04/15/podcasts.html">&lt;style&gt;
+	table {
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+&lt;/style&gt;
+
+&lt;h2 id=&quot;podcasts&quot;&gt;Podcasts:&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;category&lt;/th&gt;
+      &lt;th&gt;name&lt;/th&gt;
+      &lt;th&gt;rss&lt;/th&gt;
+      &lt;th&gt;website&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;making&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;The Board&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://theboard.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://theboard.libsyn.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Board Makers&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A158783346/sounds.rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/board-makers&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Knife Talk&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rss.simplecast.com/podcasts/2810/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://knifetalk.net/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Making It&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A144818784/sounds.rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://makingitpodcast.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Welding Tips and Tricks&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://wttpodcast.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://wttpodcast.libsyn.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;movie/show&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Back to the Future Minute&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.backtothefutureminute.com/feed/&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.backtothefutureminute.com/category/podcasts/back-to-the-future-minute/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Decoding Westworld&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/users/soundcloud:users:259871793/sounds.rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/decodingwestworld&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Interdimensional rss&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A37793930/sounds.rs://www.apatheticenthusiasm.com/feed/rickandmortypodcast/&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.apatheticenthusiasm.com/rickandmortypodcast-2/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;The Maze&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/users/soundcloud:users:432784794/sounds.rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/wisecrackwestworld&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Show Me The Meaning&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://showmethemeaning.libsyn.com/rssi&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.stitcher.com/podcast/wisecrack-inc/show-me-the-meaning-a-wisecrack-movie-podcast&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;The Squanch&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://squanch.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/thesquanch&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;videogames&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Electronic Wireless Show&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A116257077/sounds.rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/rockpapershotgun&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Giant Bombcast&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.giantbomb.com/podcast-xml/giant-bombcastanti&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.giantbomb.com/podcasts/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Hello Internet&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.hellointernet.fm/podcast?format=rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.hellointernet.fm/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Idle Thumbs&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.idlethumbs.net/feeds/idle-thumbs&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.idlethumbs.net/idlethumbs&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;The Indoor Kids&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/users/soundcloud%3Ausers%3A37793930/sounds.rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/indoorkids&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Roguelike Radio&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://feeds.feedburner.com/RoguelikeRadio&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.roguelikeradio.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Super Joysick Radio&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://superjoystickradio.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://superjoystickradio.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Videogames Hot Dog&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://shows.kingdomofloathing.com/ahd/videogameshotdog.xml&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://videogameshotdog.com/allepisodes.php&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Watch Out For Fireballs&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.watchoutforfireballs.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.watchoutforfireballs.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;music&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Legacy Music Hour&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://feeds.feedburner.com/LegacyMusicHour&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/legacy-music-hour&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;linux&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Linux Outlaws&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://feeds.feedburner.com/linuxoutlaws&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://sixgun.org/linuxoutlaws/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;others&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Advice Hot Dog&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://shows.kingdomofloathing.com/ahd/advicehotdog.xmli&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://advicehotdog.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Containers&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://feeds.feedburner.com/ContainersPodcast&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://soundcloud.com/containersfmg&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Rabbits&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://rabbits.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.rabbitspodcast.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Stuff You Should Know&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.megaphone.fm/stuffyoushouldknow&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://player.fm/series/stuff-you-should-know-1659652&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Under The Hood&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://underthehoodpod.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://underthehoodpod.libsyn.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Walking Up with Sam Harris&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://wakingup.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://www.samharris.org/podcast&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;WTF with Marc Maron&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://wtfpod.libsyn.com/rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.wtfpod.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;You Must Remember This&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.feedburner.com/MustRememberThis&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://podbay.fm/show/858124601&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;finished&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;The Biggest Problem in the Universe&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://feeds.soundcloud.com/playlists/soundcloud:playlists:232148533/sounds.rss&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://thebiggestproblemintheuniverse.com/&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Game of Thrones von Serienjunkies.de&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://sjme.de/sjpodcast/serienjunkies_podcast_itunesfeed_game-of-thrones.xml&quot;&gt;rss&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://itunes.apple.com/de/podcast/game-of-thrones-podcast/id993110464?l=en&amp;amp;mt=2&quot;&gt;link&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;android-apps&quot;&gt;Android apps:&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;app&lt;/th&gt;
+      &lt;th&gt;gpodder&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.axelby.podax&amp;amp;hl=en&quot;&gt;podax&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Subscription sync&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=de.danoeh.antennapod&amp;amp;hl=en&quot;&gt;AntennaPod&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;login but no sync so far&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=org.codepimps.listenup.free&quot;&gt;listen up free&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;login but no sync so far&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=org.bottiger.podcast&quot;&gt;SoundWaves&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.sancel.cast.best.podcast.tune.list&quot;&gt;Podcast Tunes&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;sync in progress&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.vaikeo.podcastpro&quot;&gt;PodcastBox - Podcast Player&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;only gpodder search, no sync&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.silvereon.podcast&quot;&gt;Omni Podcast&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;only search and top podcasts, no sync&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.castmic.podcast&quot;&gt;CastMic Podcast Player: Free radio podcatcher&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;sync startet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=net.alliknow.podcatcher&quot;&gt;Simple Podcatcher&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;start sync&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.peaches.jpodcasts&amp;amp;rdid=com.peaches.jpodcasts&quot;&gt;Jpodcasts&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;sync startet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.dragontek.podder&quot;&gt;Podder&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;sync startet&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.podcatcher.deluxe&amp;amp;hl=en&quot;&gt;Podcatcher Deluxe&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;2€&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;linux-clients&quot;&gt;Linux clients:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gpodder.net&quot;&gt;gpodder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;others&quot;&gt;Others:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.gnome.org/Apps/Rhythmbox&quot;&gt;rhythmbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Hisfantor</name></author><category term="movies" /><category term="shows" /><category term="videogames" /><category term="linux" /><category term="making" /><category term="music" /><summary type="html"></summary></entry></feed>
