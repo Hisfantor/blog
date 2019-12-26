@@ -3,6 +3,8 @@ layout: page
 title: about Hisfantor
 ---
 
-### niclas@hisfantor.com
+I'm an engineering student from germany. 
 
-### Hisfantor everywhere
+you can find an overview about the stuff I do on [Hisfanntor.com](Hisfantor.com).
+
+Contact: niclas@hisfantor.com or @hisfantor on most platforms.
