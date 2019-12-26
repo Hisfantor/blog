@@ -1,0 +1,101 @@
+I"�<h2 id="pc-stuff">PC stuff:</h2>
+<h3 id="desktop-updates">Desktop updates:</h3>
+<ul>
+  <li>I started using the latest Ubuntu server version in the attempt to build a slim OS to use on any system</li>
+  <li>I use I3 as my window manager</li>
+  <li>but ince then I ecperienced some random crashes and freezes and the beautiful “Aw, Snap! Something went wrong…” in chromium, not sure why</li>
+</ul>
+
+<h4 id="blog">Blog:</h4>
+<ul>
+  <li><code class="highlighter-rouge">jekyll s --unpublished</code> or <code class="highlighter-rouge">jekyll s -u</code></li>
+  <li>just to run the jekyll server with unpublished posts included</li>
+</ul>
+
+<h3 id="notebook">Notebook:</h3>
+<ul>
+  <li>ocamlfuse fucks with me and I have to remount it after each reboot</li>
+</ul>
+
+<h4 id="boot-via-external-ssd">boot via external SSD:</h4>
+<ul>
+  <li>I used an PCB of an external HDD( which I took apart to place the HDD in my Desktop) and put my old SSD in</li>
+  <li>connected it to power and via USB(3.0)</li>
+  <li>went into my BIOS(pressing F2 at startup) and enabled USB boot (boot mode: legacy)</li>
+  <li>restart and into the bootmenu(pressing F12) choose the external disk(under USB)</li>
+  <li>it booted right into the UEFI menu with options for Ubuntu and Windows</li>
+  <li>since I tested this to use windows without having it on the main PC drives I started it</li>
+</ul>
+
+<h4 id="had-to-update-the-graphics-drivers">had to update the graphics drivers:</h4>
+<ul>
+  <li>uninstalled everything nvida related</li>
+  <li>reboot</li>
+  <li>got the lates drivers for my mx150 from nvidias website</li>
+  <li>ran the installer</li>
+  <li>reboot</li>
+  <li>everything fine, card is recognised in the device and task manager(same with CPU, all disks and wifi card)</li>
+</ul>
+
+<hr />
+
+<h2 id="raspberry-plesure">Raspberry plesure:</h2>
+<h3 id="pi-calendar">Pi Calendar:</h3>
+<ul>
+  <li>I checked out <a href="https://www.youtube.com/watch?v=Idu8XfwKUao">this video</a> to learn about sprite collision detection in python to work on day4</li>
+  <li>so I started using pygame as well</li>
+  <li>it’s already working but I want to make it nice</li>
+</ul>
+
+<h3 id="pi-zero">Pi Zero:</h3>
+<ul>
+  <li>first setup ever</li>
+  <li>I found a micro to mini USB which allowed me to connect my keyboard(otherwise I wouldn’t had been able to communicate with the Pi zero thanks to his inconvinient micro usb port placement)</li>
+  <li>only thing to mention with the setup is that you have to press <code class="highlighter-rouge">space</code> to check a box in the setup</li>
+</ul>
+
+<h4 id="ssh">SSH:</h4>
+<h4 id="on-the-pihost">on the Pi(host):</h4>
+<ul>
+  <li>open terminal <code class="highlighter-rouge">Ctrl + Alt + T</code></li>
+  <li><code class="highlighter-rouge">sudo systemctl enable ssh</code></li>
+  <li><code class="highlighter-rouge">sudo systemctl start ssh</code></li>
+</ul>
+
+<h4 id="on-your-pcclient">on your PC(client):</h4>
+<ul>
+  <li><code class="highlighter-rouge">ssh pi@raspberrypi.local</code></li>
+  <li>because we haven’t changed the pi’s name there will be a warning like:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The ECDSA host key for raspberrypi.local has changed,
+and the key for the corresponding IP address 192.168.0.200
+is unknown. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:5FuzlLJo30I3uGNK1uRcieL4H776KeWzmz3aNyrzzDk.
+Please contact your system administrator.
+Add correct host key in /home/hisfantor/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /home/hisfantor/.ssh/known_hosts:17
+  remove with:
+  ssh-keygen -f "/home/hisfantor/.ssh/known_hosts" -R "raspberrypi.local"
+ECDSA host key for raspberrypi.local has changed and you have requested strict checking.
+Host key verification failed.
+
+</code></pre></div></div>
+
+<ul>
+  <li>so just do what it tells you <code class="highlighter-rouge">ssh-keygen -f "/home/hisfantor/.ssh/known_hosts" -R "raspberrypi.local"</code></li>
+  <li>then SSH again and type in the password which I have chosen while setting up the Pi</li>
+</ul>
+:ET

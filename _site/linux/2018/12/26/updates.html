@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>December 26 2018 | Hisfantor’s Blog</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="December 26 2018" />
+<meta name="author" content="Hisfantor" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Desktop updates: installed:" />
+<meta property="og:description" content="Desktop updates: installed:" />
+<link rel="canonical" href="http://0.0.0.0:4000/linux/2018/12/26/updates.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/linux/2018/12/26/updates.html" />
+<meta property="og:site_name" content="Hisfantor’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-12-26T00:00:00+01:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"December 26 2018","dateModified":"2018-12-26T00:00:00+01:00","datePublished":"2018-12-26T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/linux/2018/12/26/updates.html"},"url":"http://0.0.0.0:4000/linux/2018/12/26/updates.html","author":{"@type":"Person","name":"Hisfantor"},"description":"Desktop updates: installed:","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Hisfantor's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Hisfantor&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">about Hisfantor</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">December 26 2018</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-12-26T00:00:00+01:00" itemprop="datePublished">Dec 26, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h3 id="desktop-updates">Desktop updates:</h3>
+<ul>
+  <li>installed:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpicview		<span class="c">#picture viewer</span>
+evince			<span class="c">#pdf viewer</span>
+lxappearance		<span class="c">#gtk styling and iconpack</span>
+</code></pre></div></div>
+
+<h3 id="notebook">Notebook:</h3>
+
+<h4 id="remounting-with-read-write-rights">remounting with read write rights</h4>
+<ul>
+  <li>I booted into windows via the external SSD and searched for a file on my second internal disk</li>
+  <li>than went back to linux and had no writing rights on this drive, the following command solved it:</li>
+  <li><code class="highlighter-rouge">sudo mount -o remount,rw '/media/hisfantor/data/'</code></li>
+  <li>in which <code class="highlighter-rouge">/media/hisfantor/data/</code> is my mount point</li>
+</ul>
+
+<h4 id="rubiks-cube">rubiks cube</h4>
+<ul>
+  <li>he wrote a program to simmulate a rubiks cube with variable size</li>
+  <li>the program can simulate and solve cubes up to 101x101x101 (your PC hardware is the limiting factor)</li>
+  <li>video: <a href="https://www.youtube.com/watch?v=IM2czqavlWM">https://www.youtube.com/watch?v=IM2czqavlWM</a></li>
+  <li>code: <a href="https://github.com/Code-Bullet/RubiksCubeAI">https://github.com/Code-Bullet/RubiksCubeAI</a></li>
+  <li>IDE: <a href="https://processing.org/download/">https://processing.org/download/</a></li>
+  <li><code class="highlighter-rouge">L</code> to rotate the cube with your mouse <code class="highlighter-rouge">space</code> to start/stop scrambling/solving</li>
+</ul>
+
+<h4 id="git-branches1">git branches<sup>1</sup></h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout <span class="nt">-b</span> <span class="o">[</span>name_of_your_new_branch]
+<span class="nv">$ </span>git commit <span class="nt">-am</span> <span class="s2">"msg"</span>
+<span class="nv">$ </span>git push origin <span class="o">[</span>name_of_your_new_branch]
+</code></pre></div></div>
+<h4 id="git-prompt2">git prompt<sup>2</sup></h4>
+<ul>
+  <li>download it <a href="https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh">here</a> and put it in a file in your home directory</li>
+  <li><code class="highlighter-rouge">~/.git-prompt.sh</code></li>
+  <li>then open your <code class="highlighter-rouge">~/.bashrc</code> and put in:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.git-prompt.sh
+<span class="nb">export </span><span class="nv">PS1</span><span class="o">=</span><span class="s2">"</span><span class="se">\[\0</span><span class="s2">33[36m</span><span class="se">\]\u\[\0</span><span class="s2">33[m</span><span class="se">\]</span><span class="s2">@</span><span class="se">\[\0</span><span class="s2">33[32m</span><span class="se">\]</span><span class="s2"> </span><span class="se">\[\0</span><span class="s2">33[33;1m</span><span class="se">\]\w\[\0</span><span class="s2">33[m</span><span class="se">\]</span><span class="s2"> (</span><span class="se">\$</span><span class="s2">(git branch 2&gt;/dev/nul    l | grep '^*' | colrm 1 2)) </span><span class="se">\$</span><span class="s2"> "</span>
+</code></pre></div></div>
+<ul>
+  <li>the second line will change your command-line prompt to:</li>
+  <li><code class="highlighter-rouge">[user]@ [file path] ([git branch]) $</code></li>
+</ul>
+
+<h4 id="pulseaudio-shortcuts3">pulseaudio shortcuts<sup>3</sup></h4>
+<ul>
+  <li>first I recognised that pavucontrol and pulseaudio are the same thing… I thought they were different because my soundkeys stopped working when I opend pavucontrol</li>
+  <li>my old settings:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bindsym XF86AudioRaiseVolume <span class="nb">exec</span> <span class="nt">--no-startup-id</span> pactl set-sink-volume 0 +5% <span class="c">#increase sound volume4 </span>
+bindsym XF86AudioLowerVolume <span class="nb">exec</span> <span class="nt">--no-startup-id</span> pactl set-sink-volume 0 <span class="nt">-5</span>% <span class="c">#decrease sound volume </span>
+bindsym XF86AudioMute <span class="nb">exec</span> <span class="nt">--no-startup-id</span> pactl set-sink-mute 0 toggle <span class="c"># mute sound</span>
+</code></pre></div></div>
+<p>new settings:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bindsym XF86AudioRaiseVolume <span class="nb">exec</span> <span class="nt">--no-startup-id</span> amixer <span class="nt">-D</span> pulse sset Master 5%+ <span class="c">#increase sound volume</span>
+bindsym XF86AudioLowerVolume <span class="nb">exec</span> <span class="nt">--no-startup-id</span> amixer <span class="nt">-D</span> pulse sset Master 5%- <span class="c">#decrease sound volume</span>
+bindsym XF86AudioMute <span class="nb">exec</span> <span class="nt">--no-startup-id</span> amixer <span class="nt">-D</span> pulse <span class="nb">set </span>Master 1+ toggle <span class="c"># mute sound</span>
+</code></pre></div></div>
+<p><code class="highlighter-rouge">alsamixer</code></p>
+<ul>
+  <li>seems to work great (all in my <code class="highlighter-rouge">~/config/i3/config</code>)</li>
+</ul>
+
+<h4 id="knowledge-sauces">knowledge sauces:</h4>
+<ol>
+  <li>
+    <ul>
+      <li><a href="https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches">https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches</a></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><a href="https://qualitycoding.org/git-power-tools/">https://qualitycoding.org/git-power-tools/</a></li>
+      <li><a href="https://gist.github.com/justintv/168835">https://gist.github.com/justintv/168835</a></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><a href="https://askubuntu.com/questions/97936/terminal-command-to-set-audio-volume">https://askubuntu.com/questions/97936/terminal-command-to-set-audio-volume</a></li>
+      <li><a href="https://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer">https://askubuntu.com/questions/65764/how-do-i-toggle-sound-with-amixer</a></li>
+    </ul>
+  </li>
+</ol>
+
+  </div><a class="u-url" href="/linux/2018/12/26/updates.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Hisfantor&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Hisfantor</li><li><a class="u-email" href="mailto:niclas@hisfantor.com">niclas@hisfantor.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/hisfantor"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">hisfantor</span></a></li><li><a href="https://www.twitter.com/hisfantor"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">hisfantor</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>do stuff, make stuff, stop procrastinate</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

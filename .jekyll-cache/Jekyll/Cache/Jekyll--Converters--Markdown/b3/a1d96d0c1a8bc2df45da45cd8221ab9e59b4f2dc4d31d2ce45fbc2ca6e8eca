@@ -1,0 +1,94 @@
+I"�<h3 id="notebook">Notebook</h3>
+
+<h4 id="nvidia-drivers1">nvidia drivers<sup>1</sup></h4>
+<ul>
+  <li>I always did it like <a href="http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drivers-in-linux">here</a></li>
+  <li>but now I always get <code class="highlighter-rouge">E: Unable to locate package nvidia-410</code></li>
+  <li>so I opend <code class="highlighter-rouge">Software and Updates</code> via cmd with <code class="highlighter-rouge">sudo software-properties-gtk</code></li>
+  <li>first I deleted all the graphics drivers ppas in <code class="highlighter-rouge">other software</code></li>
+  <li>but then also installed the driver via this tool in the <code class="highlighter-rouge">additional drivers</code> tab</li>
+  <li>reboot</li>
+  <li>checked for the install by opening <code class="highlighter-rouge">$</code><code class="highlighter-rouge">nvidia-settings</code></li>
+  <li>it schould look something like this:
+<img src="https://i.imgur.com/RaLr3dD.png" alt="nvidia settings" /></li>
+  <li>or just use <code class="highlighter-rouge">lsmod | grep nvidia</code> and if you get an output the driver has sucessfully installed</li>
+</ul>
+
+<h4 id="cpu-temp2">CPU temp<sup>2</sup></h4>
+<ul>
+  <li>my notebook freezes from time to time and even SysRq shortcuts won’t help</li>
+  <li>I have to look further into it but for now I installed <code class="highlighter-rouge">lm-sensors</code></li>
+  <li><code class="highlighter-rouge">sudo apt-get install lm-sensors</code></li>
+  <li>start it with <code class="highlighter-rouge">sudo sensors-detect</code> accept everything with yes</li>
+  <li>run <code class="highlighter-rouge">sensors</code> to see the temps</li>
+  <li>output:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hisfantor@ ~ <span class="o">()</span> <span class="nv">$ </span>sensors
+coretemp-isa-0000
+Adapter: ISA adapter
+Package <span class="nb">id </span>0:  +62.0°C  <span class="o">(</span>high <span class="o">=</span> +100.0°C, crit <span class="o">=</span> +100.0°C<span class="o">)</span>
+Core 0:        +51.0°C  <span class="o">(</span>high <span class="o">=</span> +100.0°C, crit <span class="o">=</span> +100.0°C<span class="o">)</span>
+Core 1:        +51.0°C  <span class="o">(</span>high <span class="o">=</span> +100.0°C, crit <span class="o">=</span> +100.0°C<span class="o">)</span>
+Core 2:        +54.0°C  <span class="o">(</span>high <span class="o">=</span> +100.0°C, crit <span class="o">=</span> +100.0°C<span class="o">)</span>
+Core 3:        +62.0°C  <span class="o">(</span>high <span class="o">=</span> +100.0°C, crit <span class="o">=</span> +100.0°C<span class="o">)</span>
+
+acpitz-virtual-0
+Adapter: Virtual device
+temp1:        +62.0°C  <span class="o">(</span>crit <span class="o">=</span> +105.0°C<span class="o">)</span>
+
+iwlwifi-virtual-0
+Adapter: Virtual device
+temp1:        +42.0°C  
+
+pch_skylake-virtual-0
+Adapter: Virtual device
+temp1:        +45.0°C  
+
+</code></pre></div></div>
+<ul>
+  <li>don’t know why high and crit aren’t working properly but whatever</li>
+</ul>
+
+<h4 id="jekyll-error3">jekyll error<sup>3</sup></h4>
+<ul>
+  <li>got this while testing locally</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Liquid Exception: no implicit conversion of Float into String <span class="k">in</span> /_layouts/post.html
+jekyll 3.8.1 | Error:  no implicit conversion of Float into String
+
+</code></pre></div></div>
+<ul>
+  <li>the problem was that I used the date as my post title:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: 27.12
+published: false
+---
+</code></pre></div></div>
+<ul>
+  <li>changed it to <code class="highlighter-rouge">day27</code> and it works fine</li>
+</ul>
+
+<h4 id="knowledge-sauces">knowledge sauces:</h4>
+<ol>
+  <li>
+    <ul>
+      <li><a href="https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa">https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa</a></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><a href="https://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature">https://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature</a></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><a href="https://github.com/jekyll/jekyll/issues/6319">https://github.com/jekyll/jekyll/issues/6319</a></li>
+    </ul>
+  </li>
+</ol>
+:ET

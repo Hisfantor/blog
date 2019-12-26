@@ -1,0 +1,26 @@
+I"ä<h3 id="desktop-updates">Desktop updates:</h3>
+<ul>
+  <li>installed spotify with: <code class="highlighter-rouge">sudo snap install spotify</code></li>
+  <li>Trying to install nvidia driversâ€¦ freeze while rebooting
+    <ul>
+      <li>while booting enter GRUB with <code class="highlighter-rouge">Ctrl</code>+<code class="highlighter-rouge">Alt</code>+<code class="highlighter-rouge">Del</code>
+        <ul>
+          <li>or <code class="highlighter-rouge">F12</code> to get into bootorder and chose UEF</li>
+        </ul>
+      </li>
+      <li>Advanced options -&gt; Recovery mode -&gt; root</li>
+      <li>might have to remount filesystem first <code class="highlighter-rouge">mount -o rw,remount /</code></li>
+      <li>delete the drivers with <code class="highlighter-rouge">apt purge nvidia*</code></li>
+      <li><code class="highlighter-rouge">reboot</code></li>
+    </ul>
+  </li>
+  <li>copiing files from old SSD to External 4TB (and started full backup on 6TB drive)
+    <ul>
+      <li><code class="highlighter-rouge">sudo fdisk -l</code> to show all drives</li>
+      <li><code class="highlighter-rouge">mkdir /home/&lt;username&gt;/&lt;folder for drive&gt;</code> to create a folder to mount to</li>
+      <li><code class="highlighter-rouge">sudo mount -t ntfs /dev/&lt;partition name&gt; /home/&lt;username&gt;/&lt;folder for drive&gt;</code></li>
+      <li><code class="highlighter-rouge">sudo umount /dev/&lt;partition name&gt;</code> unmount drive if you need it</li>
+    </ul>
+  </li>
+</ul>
+:ET
