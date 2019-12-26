@@ -1,7 +1,28 @@
+# Jekyll Theme Dark Reader
 
-I'm working with jekyll here
+>A Minimal Dark theme for jekyll with minimal CSS
 
-which is an static site generator
+[Live Demo](https://sharadcodes.github.io/jekyll-theme-dark-reader/)
 
-it creates this static blog out of markdown files 
+## How to install
 
+1. Download or clone the repo
+   `git clone https://github.com/sharadcodes/jekyll-theme-dark-reader.git`
+2. Enter the folder
+   `cd jekyll-theme-dark-reader`
+3. Run
+   `bundle install`
+4. Start Jekyll server
+   `bundle exec jekyll serve`
+5. Access via
+   * localhost or according to your pc configurations.
+6. Change the `_config.yml` file according to you.
+7. Upload the files on your repository and :sunglasses: enjoy.
+
+
+# Screenshots
+
+## BLOG PAGE
+![Blog page](https://github.com/sharadcodes/jekyll-theme-dark-reader/raw/master/screenshots/1.png)
+## POST EXAMPLE
+![Post page](https://github.com/sharadcodes/jekyll-theme-dark-reader/raw/master/screenshots/2.png)

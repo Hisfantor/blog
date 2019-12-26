@@ -1,6 +1,6 @@
 ---
+title: About
 layout: page
-title: about Hisfantor
 ---
 
 I'm an engineering student from germany. 
