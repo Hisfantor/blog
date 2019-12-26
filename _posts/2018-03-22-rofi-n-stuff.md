@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mypost
 title: bash alias in rofi
 caption: define bash aliases and run them from rofi
 published: true

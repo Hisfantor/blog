@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mypost
 title: How gio_motion designed and built his own keyboard
 caption: 
 previewImg: /assets/pictures/

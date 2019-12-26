@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mypost
 title: 
 caption: 
 previewImg: /assets/pictures/
