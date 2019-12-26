@@ -1,105 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Hisfantor</title>
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-  <script type="text/javascript" src="http://livejs.com/live.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<link rel="shortcut icon" href="/assets/pictures/snoo.ico">
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Hisfantor's Blog | some Podcasts</title>
+	<link rel="stylesheet" href="/assets/css/mark.css" />
+	<link rel="stylesheet" href="/assets/css/custom.css" />
 </head>
-<body>
-<header class="my-site-header">
-    <div class="header-banner"> 
-      <h1>Hisfantor</h1>
-    </div>
-    <nav>
-      <a onclick="togglearchive()">Archive</a>
-     
-      <a target="_blank" href="/about.html">About</a>
-      <a onclick="totop()">top</a>
-    </nav>
+
+	<body>
+		<style>
+			.title {
+				padding: 4%;
+				color: #101417;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				background: #f78e66;
+				display: grid;
+			}
+			.meta {
+				font-size: .7rem;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+		</style>
+		<!-- header -->
+		<header>
+	<a href="/">
+		<h3>Hisfantor's Blog</h3>
+	</a>
 </header>
-<sidebar id="archive">
 
-  <div class="archive-group">
-    
-    
-    <h3 class="category-head">linux:</h3>
-    <ul>
-    
-      <li class="archive-item" ><a href="/linux/2018/12/30/day30.html" target="_blank">December 30 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/12/27/day27.html" target="_blank">December 27 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/12/26/updates.html" target="_blank">December 26 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/05/day5.html" target="_blank">December 05 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/04/day4.html" target="_blank">December 04 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/03/day3.html" target="_blank">December 03 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/02/day2.html" target="_blank">December 02 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/01/day1.html" target="_blank">December 01 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/03/22/rofi-n-stuff.html" target="_blank">bash alias in rofi</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/03/17/wpr.html" target="_blank">random desktop wallpaper</a></li>
-    
-    </ul>
-  </div>
+		<!-- nav -->
+		<nav>
+	
+	<a href="/">Home</a>
+	
+	<a href="/about">About</a>
+	
+</nav>
 
-  <div class="archive-group">
-    
-    
-    <h3 class="category-head">podcasts:</h3>
-    <ul>
-    
-      <li class="archive-item" ><a href="/podcasts/2018/04/15/podcasts.html" target="_blank">some Podcasts</a></li>
-    
-    </ul>
-  </div>
-
-  <div class="archive-group">
-    
-    
-    <h3 class="category-head">raspberry:</h3>
-    <ul>
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/05/day5.html" target="_blank">December 05 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/04/day4.html" target="_blank">December 04 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/03/day3.html" target="_blank">December 03 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/02/day2.html" target="_blank">December 02 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/01/day1.html" target="_blank">December 01 2018</a></li>
-    
-    </ul>
-  </div>
-
-</sidebar>
-
-
-<section id="page">
-<h1>some Podcasts</h1>  
-<span>15 April 2018</span>
-  <style>
+		<!-- page content -->
+		<main class="content">
+			<p class="title">
+				some Podcasts
+			</p>
+			<style>
 	table {
   padding: 0; }
   table tr {
@@ -450,9 +398,14 @@
 </ul>
 
 
-</section> 
-<footer>
-	
-</footer><script  src="/assets/js/index.js"></script>
-</body>
+		</main>
+
+		<!-- footer -->
+		<footer>
+	<p>
+		&copy 2019 | Hisfantor's Blog
+	</p>
+</footer>
+
+	</body>
 </html>

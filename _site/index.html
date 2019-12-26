@@ -1,214 +1,83 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Hisfantor</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script type="text/javascript" src="http://livejs.com/live.js"></script
->  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<link rel="shortcut icon" href="assets/pictures/snoo.ico" type="image/x-icon"/>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Hisfantor's Blog | Blog</title>
+	<link rel="stylesheet" href="/assets/css/mark.css" />
+	<link rel="stylesheet" href="/assets/css/custom.css" />
 </head>
-<body>
-<header class="my-site-header">
-    <div class="header-banner"> 
-      <h1>Hisfantor</h1>
-    </div>
-    <nav>
-      <a onclick="togglearchive()">Archive</a>
-     
-      <a target="_blank" href="/about.html">About</a>
-      <a onclick="totop()">top</a>
-    </nav>
+
+	<body>
+		<style>
+			.title {
+				padding: 5%;
+				color: #101417;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				background: #f78e66;
+				display: grid;
+			}
+			.meta {
+				font-size: .7rem;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+		</style>
+		<!-- header -->
+		<header>
+	<a href="/">
+		<h3>Hisfantor's Blog</h3>
+	</a>
 </header>
-<sidebar id="archive">
 
-  <div class="archive-group">
-    
-    
-    <h3 class="category-head">linux:</h3>
-    <ul>
-    
-      <li class="archive-item" ><a href="/linux/2018/12/30/day30.html" target="_blank">December 30 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/12/27/day27.html" target="_blank">December 27 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/12/26/updates.html" target="_blank">December 26 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/05/day5.html" target="_blank">December 05 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/04/day4.html" target="_blank">December 04 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/03/day3.html" target="_blank">December 03 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/02/day2.html" target="_blank">December 02 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/01/day1.html" target="_blank">December 01 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/03/22/rofi-n-stuff.html" target="_blank">bash alias in rofi</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/2018/03/17/wpr.html" target="_blank">random desktop wallpaper</a></li>
-    
-    </ul>
-  </div>
-
-  <div class="archive-group">
-    
-    
-    <h3 class="category-head">podcasts:</h3>
-    <ul>
-    
-      <li class="archive-item" ><a href="/podcasts/2018/04/15/podcasts.html" target="_blank">some Podcasts</a></li>
-    
-    </ul>
-  </div>
-
-  <div class="archive-group">
-    
-    
-    <h3 class="category-head">raspberry:</h3>
-    <ul>
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/05/day5.html" target="_blank">December 05 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/04/day4.html" target="_blank">December 04 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/03/day3.html" target="_blank">December 03 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/02/day2.html" target="_blank">December 02 2018</a></li>
-    
-    
-      <li class="archive-item" ><a href="/linux/raspberry/2018/12/01/day1.html" target="_blank">December 01 2018</a></li>
-    
-    </ul>
-  </div>
-
-</sidebar>
-
-
-<section id="contentbox">   
-  
-  <article>
-    <h2><a href="/2019/07/15/How-I-designed-and-built-my-own-keyboard-Costs-and-Resources-by-gio_motion.html" target="_blank">How gio_motion designed and built his own keyboard</a></h2>
-    <p>
-      
-    </p>
-    <time datetime="2019-07-15">15 July 2019</time>
-  </div>
-  </article>
-
-  <article>
-    <h2><a href="/linux/2018/12/30/day30.html" target="_blank">December 30 2018</a></h2>
-    <p>
-      recovering a non writable, external hard drive
-    </p>
-    <time datetime="2018-12-30">30 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/2018/12/27/day27.html" target="_blank">December 27 2018</a></h2>
-    <p>
-      installed nvidia drivers; CPU temerature visualizer; jekyll title error
-    </p>
-    <time datetime="2018-12-27">27 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/2018/12/26/updates.html" target="_blank">December 26 2018</a></h2>
-    <p>
-      remounting disk; rubics cube software; git branches;
-    </p>
-    <time datetime="2018-12-26">26 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/raspberry/2018/12/05/day5.html" target="_blank">December 05 2018</a></h2>
-    <p>
-      boot via external SSD; Pi SSH
-    </p>
-    <time datetime="2018-12-05">05 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/raspberry/2018/12/04/day4.html" target="_blank">December 04 2018</a></h2>
-    <p>
-      Xmodmap; python and Pi
-    </p>
-    <time datetime="2018-12-04">04 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/raspberry/2018/12/03/day3.html" target="_blank">December 03 2018</a></h2>
-    <p>
-      google drive in nautilus; Python and Pi blink LED
-    </p>
-    <time datetime="2018-12-03">03 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/raspberry/2018/12/02/day2.html" target="_blank">December 02 2018</a></h2>
-    <p>
-      scratch on Pi
-    </p>
-    <time datetime="2018-12-02">02 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/raspberry/2018/12/01/day1.html" target="_blank">December 01 2018</a></h2>
-    <p>
-      Pi Setup, Pi Calender, nvidia driver problems
-    </p>
-    <time datetime="2018-12-01">01 December 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/podcasts/2018/04/15/podcasts.html" target="_blank">some Podcasts</a></h2>
-    <p>
-      Podcats sorted in categories with links
-    </p>
-    <time datetime="2018-04-15">15 April 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/2018/03/22/rofi-n-stuff.html" target="_blank">bash alias in rofi</a></h2>
-    <p>
-      define bash aliases and run them from rofi
-    </p>
-    <time datetime="2018-03-22">22 March 2018</time>
-  
-  </article>
-
-  <article>
-    <h2><a href="/linux/2018/03/17/wpr.html" target="_blank">random desktop wallpaper</a></h2>
-    <p>
-      we combine a reddit wallpaper fetcher with i3wm in ubuntu
-    </p>
-    <time datetime="2018-03-17">17 March 2018</time>
-  
-  </article>
-
-</section> 
-<footer>
+		<!-- nav -->
+		<nav>
 	
-</footer><script  src="assets/js/index.js"></script>
-</body>
+	<a href="/">Home</a>
+	
+	<a href="/about">About</a>
+	
+</nav>
+
+		<!-- page content -->
+		<main class="post-list">
+			
+<a href="/2019/07/15/How-I-designed-and-built-my-own-keyboard-Costs-and-Resources-by-gio_motion.html">How gio_motion designed and built his own keyboard</a>
+
+<a href="/linux/2018/12/30/day30.html">December 30 2018</a>
+
+<a href="/linux/2018/12/27/day27.html">December 27 2018</a>
+
+<a href="/linux/2018/12/26/updates.html">December 26 2018</a>
+
+<a href="/linux/raspberry/2018/12/05/day5.html">December 05 2018</a>
+
+<a href="/linux/raspberry/2018/12/04/day4.html">December 04 2018</a>
+
+<a href="/linux/raspberry/2018/12/03/day3.html">December 03 2018</a>
+
+<a href="/linux/raspberry/2018/12/02/day2.html">December 02 2018</a>
+
+<a href="/linux/raspberry/2018/12/01/day1.html">December 01 2018</a>
+
+<a href="/podcasts/2018/04/15/podcasts.html">some Podcasts</a>
+
+<a href="/linux/2018/03/22/rofi-n-stuff.html">bash alias in rofi</a>
+
+<a href="/linux/2018/03/17/wpr.html">random desktop wallpaper</a>
+
+
+		</main>
+
+		<!-- footer -->
+		<footer>
+	<p>
+		&copy 2019 | Hisfantor's Blog
+	</p>
+</footer>
+
+	</body>
 </html>
