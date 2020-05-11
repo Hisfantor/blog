@@ -9,8 +9,9 @@ tags: [Tech, HDD, SSD]
 ## Reviews:
 
 ### PosuGear
+[Amazon](https://www.amazon.de/gp/product/B077XVTTJC/ref=ppx_yo_dt_b_asin_title_o02_s00)
 
-cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensions:128x79x14mm
+cable: 41cm | Case: 56g | LED: blue (cool effect with the clear case) | Dimensions:128x79x14mm
 
 <img src="{{site.baseurl}}/assets/pictures/enclosure/pos1.jpg" alt="product" title="product picture" width="48%" height="auto" />
 <img src="{{site.baseurl}}/assets/pictures/enclosure/pos2.jpg" alt="product" title="product picture" width="48%" height="auto" />
@@ -18,7 +19,7 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 #### Pros:
 
 + cool looking case
-+ cabel can stay in while changing drives
++ cable can stay in while changing drives
 
 #### Cons:
 
@@ -35,8 +36,9 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 ---
 
 ### Inateck
+[Amazon](https://www.amazon.de/gp/product/B00KW4T69A/ref=ppx_yo_dt_b_asin_title_o02_s01)
 
-|cable: 50cm|case: 69g|LED: blue|Dimensions:126x81x15mm|
+|Cable: 50cm|Case: 69g|LED: blue|Dimensions:126x81x15mm|
 
 <img src="{{site.baseurl}}/assets/pictures/enclosure/ina1.jpg" alt="product" title="product picture" width="48%" height="auto" />
 <img src="{{site.baseurl}}/assets/pictures/enclosure/ina2.jpg" alt="product" title="product picture" width="48%" height="auto" />
@@ -62,8 +64,9 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 ---
 
 ### Arioue
+[Amazon](https://www.amazon.de/gp/product/B07Z3DNBWP/ref=ppx_yo_dt_b_asin_title_o02_s03)
 
-|cable: 32cm|case: 79g|LED: green|Dimensions:122x78x13mm|
+|Cable: 32cm|Case: 79g|LED: green|Dimensions:122x78x13mm|
 
 <img src="{{site.baseurl}}/assets/pictures/enclosure/ari1.jpg" alt="product" title="product picture" width="48%" height="auto" />
 <img src="{{site.baseurl}}/assets/pictures/enclosure/ari2.jpg" alt="product" title="product picture" width="48%" height="auto" />
@@ -89,8 +92,9 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 ---
 
 ### Salcar
+[Amazon](https://www.amazon.de/gp/product/B01D9KX8KG/ref=ppx_yo_dt_b_asin_title_o00_s00)
 
-|cable: 52cm|case: 68g|LED: blue|Dimensions: 126x80x14mm|
+|Cable: 52cm|Case: 68g|LED: blue|Dimensions: 126x80x14mm|
 
 <img src="{{site.baseurl}}/assets/pictures/enclosure/sal1.jpg" alt="product" title="product picture" width="48%" height="auto" />
 <img src="{{site.baseurl}}/assets/pictures/enclosure/sal2.jpg" alt="product" title="product picture" width="48%" height="auto" />
@@ -171,5 +175,5 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 |Stars:|2.6/5|4.3/5|5/5|4.4/5|
 
 ## Winner:
-### **Arioue**
+### **[Arioue](https://www.amazon.de/gp/product/B07Z3DNBWP/ref=ppx_yo_dt_b_asin_title_o02_s03)**
 <img src="{{site.baseurl}}/assets/pictures/enclosure/ari3.jpg" alt="product" title="product picture" width="48%" height="auto" />
