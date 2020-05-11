@@ -12,8 +12,8 @@ tags: [Tech, HDD, SSD]
 
 cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensions:128x79x14mm
 
-<img src="/assets/pictures/enclosure/pos1.jpg" alt="product" title="product picture" width="48%" height="auto" />
-<img src="/assets/pictures/enclosure/pos2.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/pos1.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/pos2.jpg" alt="product" title="product picture" width="48%" height="auto" />
 
 #### Pros:
 
@@ -28,9 +28,9 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 - kinda difficulty to get the drive out because you can't push from below
 - fingerprints are very visible
 
-<img src="/assets/pictures/enclosure/pos1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/pos250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/pos160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/pos1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/pos250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/pos160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
 
 ---
 
@@ -38,8 +38,8 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 
 |cable: 50cm|case: 69g|LED: blue|Dimensions:126x81x15mm|
 
-<img src="/assets/pictures/enclosure/ina1.jpg" alt="product" title="product picture" width="48%" height="auto" />
-<img src="/assets/pictures/enclosure/ina2.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ina1.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ina2.jpg" alt="product" title="product picture" width="48%" height="auto" />
 
 #### Pros:
 
@@ -55,9 +55,9 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 - kinda hard to see the direction the drive has to go 
 - cable has to detach to cahnge the drive
 
-<img src="/assets/pictures/enclosure/ina1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/ina250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/ina160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ina1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ina250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ina160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
 
 ---
 
@@ -65,8 +65,8 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 
 |cable: 32cm|case: 79g|LED: green|Dimensions:122x78x13mm|
 
-<img src="/assets/pictures/enclosure/ari1.jpg" alt="product" title="product picture" width="48%" height="auto" />
-<img src="/assets/pictures/enclosure/ari2.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ari1.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ari2.jpg" alt="product" title="product picture" width="48%" height="auto" />
 
 #### Pros:
 
@@ -82,9 +82,9 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 
 - some minor ruff metall edges
 
-<img src="/assets/pictures/enclosure/ari1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/ari250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/ari160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ari1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ari250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ari160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
 
 ---
 
@@ -92,8 +92,8 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 
 |cable: 52cm|case: 68g|LED: blue|Dimensions: 126x80x14mm|
 
-<img src="/assets/pictures/enclosure/sal1.jpg" alt="product" title="product picture" width="48%" height="auto" />
-<img src="/assets/pictures/enclosure/sal2.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/sal1.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/sal2.jpg" alt="product" title="product picture" width="48%" height="auto" />
 
 #### Pros:
 
@@ -109,9 +109,9 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 - fingerprints very visible all over the case
 - kinda bad manufacturing quallity
 
-<img src="/assets/pictures/enclosure/sal1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/sal250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
-<img src="/assets/pictures/enclosure/sal160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/sal1tb.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/sal250.png" alt="graph" title="read write speeds" width="30%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/sal160.png" alt="graph" title="read write speeds" width="30%" height="auto" />
 
 ## Sammury:
 
@@ -172,4 +172,4 @@ cabel: 41cm | case: 56g | LED: blue (cool effect with the clear case) | Dimensio
 
 ## Winner:
 ### **Arioue**
-<img src="/assets/pictures/enclosure/ari3.jpg" alt="product" title="product picture" width="48%" height="auto" />
+<img src="{{site.baseurl}}/assets/pictures/enclosure/ari3.jpg" alt="product" title="product picture" width="48%" height="auto" />
