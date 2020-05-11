@@ -11,7 +11,7 @@ tags: [Tech, HDD, SSD]
 ### PosuGear
 [Amazon](https://www.amazon.de/gp/product/B077XVTTJC/ref=ppx_yo_dt_b_asin_title_o02_s00)
 
-cable: 41cm | Case: 56g | LED: blue (cool effect with the clear case) | Dimensions:128x79x14mm
+Cable: 41cm | Case: 56g | LED: blue (cool effect with the clear case) | Dimensions:128x79x14mm
 
 <img src="{{site.baseurl}}/assets/pictures/enclosure/pos1.jpg" alt="product" title="product picture" width="48%" height="auto" />
 <img src="{{site.baseurl}}/assets/pictures/enclosure/pos2.jpg" alt="product" title="product picture" width="48%" height="auto" />
