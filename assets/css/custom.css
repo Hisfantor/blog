@@ -96,3 +96,32 @@ footer {
 		margin-right: 10%;
 	}
 }
+
+	table {
+  padding: 0; 
+color: rgb(167, 158, 139) !important;
+background-color: rgb(16, 20, 23);
+}
+  table tr {    
+    margin: 0;
+    padding: 0; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+	
+
+hr {
+	background-color: unset;
+}

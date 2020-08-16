@@ -81,38 +81,38 @@
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">RPi.GPIO</span> <span class="k">as</span> <span class="n">GPIO</span> 		
-<span class="c1">#improting the GPIO functions
-</span><span class="kn">import</span> <span class="nn">time</span>						
-<span class="c1">#time for pauses between steps
-</span>
+<span class="c">#improting the GPIO functions</span>
+<span class="kn">import</span> <span class="nn">time</span>						
+<span class="c">#time for pauses between steps</span>
+
 <span class="n">GPIO</span><span class="o">.</span><span class="n">setmode</span><span class="p">(</span><span class="n">GPIO</span><span class="o">.</span><span class="n">BCM</span><span class="p">)</span>			
-<span class="c1">#that's the method how to assign the pins
-</span><span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>		
-<span class="c1"># use the pins as out
-</span><span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>		
-<span class="c1">#I used the same pins as the calendar
-</span>
+<span class="c">#that's the method how to assign the pins</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>		
+<span class="c"># use the pins as out</span>
+<span class="n">GPIO</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>		
+<span class="c">#I used the same pins as the calendar</span>
+
 <span class="n">t</span> <span class="o">=</span> <span class="mf">0.5</span> 						
-<span class="c1">#varable for timing(t in s)
-</span>
+<span class="c">#varable for timing(t in s)</span>
+
 <span class="k">def</span> <span class="nf">dot</span><span class="p">():</span>					
-<span class="c1"># I used the two LEDs to make a little morse code
-# dot/short is the first LED
-</span>	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>	
+<span class="c"># I used the two LEDs to make a little morse code</span>
+<span class="c"># dot/short is the first LED</span>
+	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>	
 	<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span>
 	<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">dash</span><span class="p">():</span>						
-<span class="c1">#dash/long is the second LED
-</span>	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
+<span class="c">#dash/long is the second LED</span>
+	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
 	<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span>
 	<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">stop</span><span class="p">():</span>						
-<span class="c1">#in between letters both LEDs light up
-</span>	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
+<span class="c">#in between letters both LEDs light up</span>
+	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
 	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">HIGH</span><span class="p">)</span>
 	<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 	<span class="n">GPIO</span><span class="o">.</span><span class="n">output</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="n">GPIO</span><span class="o">.</span><span class="n">LOW</span><span class="p">)</span>
@@ -132,11 +132,11 @@
 <span class="n">dot</span><span class="p">()</span>
 <span class="n">stop</span><span class="p">()</span>
 
-<span class="c1">#...
-</span>
+<span class="c">#...</span>
+
 <span class="n">GPIO</span><span class="o">.</span><span class="n">cleanup</span><span class="p">()</span>					
-<span class="c1">#stes back all the GPIO settings and turns everything off
-</span></code></pre></div></div>
+<span class="c">#stes back all the GPIO settings and turns everything off</span>
+</code></pre></div></div>
 <ul>
   <li>that’s my first code in Python ever and I really like it, its conda confusing that a function block is defined by tabs and not curly brackets</li>
   <li>also it’s awesome experimenting with the GPIO pins, all the potential it brings to the table!</li>
