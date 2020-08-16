@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Hisfantor's Blog | hugo setup</title>
+	<link rel="stylesheet" href="/assets/css/mark.css" />
+	<link rel="stylesheet" href="/assets/css/custom.css" />
+</head>
+
+	<body>
+		<style>
+			.title {
+				padding: 4%;
+				color: #101417;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				background: #f78e66;
+				display: grid;
+			}
+			.meta {
+				font-size: .7rem;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+		</style>
+		<!-- header -->
+		<header>
+	<a href="/">
+		<h3>Hisfantor's Blog</h3>
+	</a>
+</header>
+
+		<!-- nav -->
+		<nav>
+	
+	<a href="/">Home</a>
+	
+	<a href="/about">About</a>
+	
+</nav>
+
+		<!-- page content -->
+		<main class="content">
+			<p class="title">
+				hugo setup
+			</p>
+			<p>sudo apt install hugo
+hugo version
+hugo new site newsitename</p>
+
+<p>hugo new posts/first-post.md
+vim content/posts/first-post.md</p>
+
+<p>hugo server
+git init
+git submodule add <em>theme github clone</em> themes/themename
+cp themes/dracula/exampleSite/* . -r
+change in config.toml themesDir, theme, baseurl</p>
+
+<p>config.toml add publishDir = “docs”
+hugo</p>
+
+<p>git remote add origin <em>new github repo</em>
+git add –all
+git commit -m “first-commit”
+git push origin master</p>
+
+		</main>
+
+		<!-- footer -->
+		<footer>
+	<p>
+		&copy 2019 | Hisfantor's Blog
+	</p>
+</footer>
+
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Hisfantor's Blog | Pihole</title>
+	<link rel="stylesheet" href="/assets/css/mark.css" />
+	<link rel="stylesheet" href="/assets/css/custom.css" />
+</head>
+
+	<body>
+		<style>
+			.title {
+				padding: 4%;
+				color: #101417;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				background: #f78e66;
+				display: grid;
+			}
+			.meta {
+				font-size: .7rem;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+		</style>
+		<!-- header -->
+		<header>
+	<a href="/">
+		<h3>Hisfantor's Blog</h3>
+	</a>
+</header>
+
+		<!-- nav -->
+		<nav>
+	
+	<a href="/">Home</a>
+	
+	<a href="/about">About</a>
+	
+</nav>
+
+		<!-- page content -->
+		<main class="content">
+			<p class="title">
+				Pihole
+			</p>
+			<h3 id="prepare-the-pi">prepare the pi</h3>
+<ul>
+  <li>download the rpi-imager from <a href="https://www.raspberrypi.org/downloads/">the raspberrypi website</a></li>
+  <li>write rasbian lite to your sd-card(at least 4Gb)</li>
+</ul>
+
+<h4 id="on-windows">on windows</h4>
+<ul>
+  <li>Control Panel &gt; Programs &gt; Turn Windows Features On Or Off. Enable the “Windows Subsystem for Linux”</li>
+</ul>
+
+<p><img src="" alt="windows settings" /></p>
+
+<ul>
+  <li>install ubuntu from the microsoft store</li>
+</ul>
+
+<p><img src="" alt="microsoft store ubuntu" /></p>
+<ul>
+  <li>start “Ubuntu” let it install and set your password(I’d recommand the same as you’ll use on your pi) and username</li>
+  <li><code class="highlighter-rouge">sudo apt update &amp;&amp; sudo apt upgrade -y</code></li>
+  <li>mount the SD card to enable SSH:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir /mnt/d
+sudo mount -t drvfs D: /mnt/d
+cd /mnt/d
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="the-rest-via-linux">the rest via Linux</h4>
+
+<ul>
+  <li>create an “ssh” file (no extension) under the boot partition:</li>
+  <li><code class="highlighter-rouge">vi ssh</code></li>
+  <li>
+    <p>type <code class="highlighter-rouge">:wq</code> and hit enter</p>
+  </li>
+  <li>now you can put the SD in your pi, connect ethernet(CAT5.e recommandet) and finnaly plug in power</li>
+  <li>after boot use <code class="highlighter-rouge">ssh pi@raspberrypi.local</code></li>
+  <li>password: raspberry</li>
+</ul>
+
+<p><img src="" alt="ssh login" /></p>
+
+<ul>
+  <li>use <code class="highlighter-rouge">ifconfig</code> to see the PI’s mac adress</li>
+</ul>
+
+<p><img src="" alt="ifconfig from pi" /></p>
+
+<ul>
+  <li>set static ip via your router</li>
+  <li>
+    <p>reboot pi</p>
+  </li>
+  <li><code class="highlighter-rouge">ssh pi@&lt;your ip&gt;</code></li>
+  <li>optional <code class="highlighter-rouge">sudo raspi-config</code> to change your password</li>
+  <li><code class="highlighter-rouge">sudo apt update &amp;&amp; sudo apt upgrade -y</code></li>
+  <li>now the actuall install:</li>
+  <li><code class="highlighter-rouge">curl -sSL https://install.pi-hole.net | bash</code></li>
+  <li>keep all of the preset preferences</li>
+  <li>take a screenshot of the finish page with the ip and your password to the analytics</li>
+  <li>type <code class="highlighter-rouge">exit</code> hit enter, to get out of the ssh connection</li>
+</ul>
+
+<h3 id="set-the-new-dns-server">set the new DNS Server</h3>
+<h4 id="ubuntu">ubuntu</h4>
+<p><code class="highlighter-rouge">sudo vi /etc/netplan/01-netcfg.yaml</code></p>
+
+<h4 id="android">android</h4>
+
+<h4 id="windows">windows</h4>
+
+<h3 id="check-statistics">check statistics</h3>
+<p><a href="http://192.168.0.30/admin/index.php">http://192.168.0.30/admin/index.php</a></p>
+
+<h4 id="souces">Souces:</h4>
+<p>https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/
+https://superuser.com/questions/1114341/windows-10-ubuntu-bash-shell-how-do-i-mount-other-windows-drives
+https://linustechtips.com/main/topic/1094810-pi-hole-setup-tutorial/</p>
+
+		</main>
+
+		<!-- footer -->
+		<footer>
+	<p>
+		&copy 2019 | Hisfantor's Blog
+	</p>
+</footer>
+
+	</body>
+</html>
